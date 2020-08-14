@@ -1,0 +1,34 @@
+Lesson 4: Adding Accessibility to Forms
+
+Now we can know the reason for adding for and labels to our forms- it is to make it more readable for the user
+
+Not only do radio and checkboxes get labels
+- ALL form types are to get labels:
+
+<form>
+  <label for = "something">Whatever you want to call the Form</label>
+  <input type= "whatever" id= "something" name= "something">
+</form>
+
+# Don't need to wrap the label as we had seen in the radio lesson
+- since we are already using for, can just wrap the label around what you want to call the form
+
+For radio buttons or checkboxes- add fieldset and legend:
+- fieldset is a wrapper which groups all of the options to the same question together
+- legend informs the user what you are choosing the options for
+- rememeber to add a wrapper to each option
+
+Eg:
+<form>
+  <fieldset>
+    <legend>Choose one of these three items:</legend>
+    <input id="one" type="radio" name="items" value="one">
+    <label for="one">Choice One</label><br>
+    <input id="two" type="radio" name="items" value="two">
+    <label for="two">Choice Two</label><br>
+    <input id="three" type="radio" name="items" value="three">
+    <label for="three">Choice Three</label>
+  </fieldset>
+</form>
+
+# All options have labels and there is also a legend

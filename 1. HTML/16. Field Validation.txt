@@ -1,0 +1,18 @@
+<!-- Lesson 16: Field Validation
+Now we have a mini form where a user can write something in the text field
+and submit it
+
+However, what if we want the text field to field in before submission?
+- Basically cannot submit the field empty
+
+Just add the required attribute to the text field:
+<input type="text" required>
+- Does not have to equal anything, just write required
+
+Thus if we add this to our current form:
+-->
+
+<form action="/submit-cat-photo">
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>

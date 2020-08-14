@@ -1,0 +1,32 @@
+Lesson 2: Use CSS Animation to Change the Hover State of a Button
+
+We have already covered how to change the color of an element when you hover over it
+- But we can take it to the next level by adding keyframes to the equation
+- You can make the element become smaller/bigger, a different shape, etc
+
+Below you will see a combination of :hover and keyframes at work to make a button change color when you hover over it
+
+<style>
+  button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
+  }
+
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes background-color {
+    100% {background-color:#4791d0; }
+  }
+
+
+</style>
+
+<button>Register</button>
+
+# So just go directly to 100% 
+# We get to see a new property- animation-fill-mode: explained in detail in Lesson 0

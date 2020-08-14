@@ -1,0 +1,30 @@
+<!-- Lesson 14: Using Attribute Selectors to Style Elements
+We have learnt a few different ways to style elements
+Eg: class and id
+
+Now we learn that we can use attributes to style elements ,
+[type="radio"} {}
+- By doing the above, all elements with attribute [type="radio"] will be styled by what is written in {}
+
+Below we change the margins of the checkbox by using attributes
+-->
+
+<style>
+
+  [type="checkbox"]{
+    margin: 10px 0px 15px 0px}
+
+</style>
+
+<main>
+
+  <form action="/submit-cat-photo" id="cat-photo-form">
+    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</main>

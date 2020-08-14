@@ -1,0 +1,91 @@
+# Lesson 17: Override!!!
+In this lesson we will be looking at overriding
+- To make things easier, I won't be commenting things out
+- So this document cannot be turned into a HTML
+
+A brief overview of the chain of power looks something like this:
+
+!Important > Inline Style > id > Whichever class is declared last > Class > Inheritance
+
+Let us start from the weakest and then go up:
+
+- Inheritance
+
+<style>
+  body{color: green;}
+</style>
+
+<h1>Hello World</h1>
+
+# In this scenario <h1> will be green in color since there is only inheritance as of now
+
+- Class
+
+<style>
+  body{color: green;}
+  .pink-text{color: pink;}
+</style>
+
+<h1 class= "pink-text">Hello World</h1>
+
+# Classes override inheritance, thus <h1> will be pink in color and not green
+
+- Hierachy within Classes
+
+<style>
+  body{color: green;}
+  .pink-text{color: pink;}
+  .blue-text{color: blue;}
+</style>
+
+<h1 class= "pink-text blue-text">Hello World</h1>
+
+# CSS reads from the top to bottom and thus the hierachy favors the class it read last
+# Thus the class which is written last is the one that will override the rest
+# Therefore, <h1> will be blue- overriding both inheritance and the class that came before it
+
+- id
+
+<style>
+  body{color: green;}
+  .pink-text{color: pink;}
+  .blue-text{color: blue;}
+  #orange-text{color: orange;}
+</style>
+
+<h1 id = "orange-text" class= "pink-text blue-text">Hello World</h1>
+
+# id overrides all classes and inheritance, it does not matter if it comes before or after the classes
+# Thus, <h1> will be orange overriding all of the classes and inheritance so far
+
+- Inline Style
+
+<style>
+  body{color: green;}
+  .pink-text{color: pink;}
+  .blue-text{color: blue;}
+  #orange-text{color: orange;}
+</style>
+
+<h1 id = "orange-text" class= "pink-text blue-text" style = "color: white;">Hello World</h1>
+
+# Inline style is when we add the style within the element- <h1 style = "color: white;"
+# While this is not a preffered method to use to style- it overrides all of the prior methods
+# Therefore, now <h1> is white
+
+- !Important
+
+<style>
+  body{color: green !important;}
+  .pink-text{color: pink;}
+  .blue-text{color: blue;}
+  #orange-text{color: orange;}
+</style>
+
+<h1 id = "orange-text" class= "pink-text blue-text" style = "color: white;">Hello World</h1>
+
+# I added !important to the weakest of the colors based on the hierachy- green
+# Since !important overrides ALL- <h1> is now green once again
+# !important should be used when you need a certain css style to be applied at all costs
+
+THEREFORE THIS IS THE HIERACHY!!!

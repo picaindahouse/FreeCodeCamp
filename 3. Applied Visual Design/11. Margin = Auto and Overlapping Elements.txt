@@ -1,0 +1,44 @@
+Lesson 11: Margin = "Auto" and Overlapping Elements
+
+Will go through two unrelated things in this lesson
+
+AUTO MARGIN
+By equating margin to auto, the element automatically becomes centralised
+
+<style>
+  h1 {margin: auto:}
+</style>
+<h1>Hello World</h1>
+
+- h1 in the above scenario will be in the center
+
+OVERLAPPING ELEMENTS
+
+Sometimes, two or more elements might overlap when you play around with the position: absolute/relative/etc
+Two be able to decide the order of the overlap use z-index
+
+Basically, give all overlapping elements a "z-index number" and the higher numbers will be on top 
+In the scenario below first has a higher z-index (2) and thus will be on top of second who has a lower z-index number (1)
+eg:<style>
+  div {
+    width: 60%;
+    height: 200px;
+    margin-top: 20px;
+  }
+
+  .first {
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+  }
+  .second {
+    background-color: blue;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    z-index: 1;
+  }
+</style>
+
+<div class="first"></div>
+<div class="second"></div>

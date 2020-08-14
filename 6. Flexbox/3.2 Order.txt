@@ -1,0 +1,22 @@
+Lesson 3.2: The Order Property
+
+* No changes here- just the order that elements will be displayed in
+
+Reminder: Since with child element's we are going to be dealing with specific elements- have to style them personally
+- Not under style on the top but rather directly in the tag itself
+
+# Order property specifies the order of the flex items
+
+<div class="flex-container">
+  <div style="order: 3">Tom</div>
+  <div style="order: 1">Dick</div>
+  <div style="order: 2">Hairy</div>
+</div>
+
+# In the above scenario despite the order that they are written down in being- tom dick hairy
+  - It will be read as Dick Hairy Tom
+
+# As you can see to apply flexbox to child element's have to directly style at the element
+  - <div style="___"><div>
+  - In the case of order:
+    - <div style="order: 1"></div>

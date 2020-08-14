@@ -1,0 +1,20 @@
+Step 2:
+- Under <body> create <header>
+Now your header will move between all pages of the website so, minimally it should have the title of the site and menu (nav)
+- Therefore, create a <div classs = "Container> that will contain your title and your navigation
+- In this static site it looks something like this:
+
+    <header>
+        <div class="container">
+            <div id = "title">
+                <h1>My First Website</h1>    # Title
+            </div>
+            <nav>                            # Navigation (Menu)
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>

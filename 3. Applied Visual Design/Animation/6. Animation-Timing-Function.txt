@@ -1,0 +1,46 @@
+Lesson 6: Animation Timing Function
+
+animation-timing-function is the fifth property we will be looking at.
+- It controls how quicjly an animated element changes ver the duration of an animation
+- Basically decides how fast the element accelerates or decelerates
+
+There are quite a few predefined keywords for popular options, here are a few
+- ease
+  - Slow at the start, speeds up in the middle and slow at the end
+- ease-out
+  - Slows down at the end
+- ease-in
+  - Begins slow and then speeds up
+- linear
+  - Constant speed throughout
+- ease-in-out 
+  - Specifies an animation with a slow start and end
+
+However, for even finer control than keywords- one can use bezier curves
+Bezier curve is a graph of Change in Animation against Duration of Animation
+- There are four points on this graph: p0, p1, p2, p3
+- p0 is the starting point (0,0) and p3 is the end point (1,1)
+- Thus we just have to define p1 and p2 to get the animation speed we desire
+ 
+eg:
+animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+
+# This means that the graph has the points- (0,0), (0.25, 0.25), (0.75, 0.75), (1, 1)
+  - This is the same as saying that the graph is linear and thus the above is the same as writing linear
+	
+# So how to make something go faster or slower?
+  - When the gradient of two points > 1: Speed Up
+    - Thus (0,0) to (0.5, 1) speeds up: gradient = 2 (> 1)
+    - Thus (0.5, 1) to (1, 1) slows down: gradient = 0 (< 1)
+
+# Therefore to ease:
+cubic-bezier(0.25, 0, 0.75, 1)
+- From (0,0) to (0.25, 0): slow down (gradient = 0)
+- From (0.25, 0) to (0.75, 1): speed up (gradient = 2)
+- From (0.75, 1) to (1, 1); slow down (gradient = 0)
+
+After playing around this is very similar to the actual ease: 
+   animation-timing-function: cubic-bezier(0.175,0, 0.280, 1);}
+- Need a very steep gradient for it to accelerate thus the short gap in duration- then just slow before and after
+
+# NICE

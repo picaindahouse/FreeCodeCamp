@@ -1,0 +1,12 @@
+<!-- Lesson 9: Creating Dead Links
+If you wish to have a placeholder for a link you have not added yet then 
+just put a # in place of the link
+
+Since this is all just for practice- most links from now on will be dead
+
+An example: -->
+
+
+<a href="#" target="_blank">cat photos</a>
+
+

@@ -1,0 +1,31 @@
+Lesson 21: Media Queries
+Media queries is a CSS3 module allowing content rendering to adapt to conditions such as screen resolution. 
+
+This basically means that you can set conditions which when met react differently
+eg: If the screen is smaller than a certain size then all the sizes decrease
+
+How to apply:
+@media(condition){What happens when condition is met}
+
+eg:
+<style>
+  :root {
+    --penguin-size: 300px;
+    --penguin-skin: gray;}
+
+  @media (max-width: 350px) {
+    :root {
+      --penguin-size: 200px;
+      --penguin-skin: black;
+    }
+</style>
+
+Basically, what happens is if the screens width is <= 350px then:
+- penguin-size: 200px
+- penguin-skin: black
+
+If not:
+- penguin-size: 300px
+- penguin-skin: gray
+
+And that is it for CSS!!!

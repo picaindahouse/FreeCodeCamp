@@ -1,0 +1,15 @@
+Lesson 1: Adding Text Alt for the Visually Impaired
+
+Already learnt how to add alt before, I bring it up again because it is mandatory to add Alt in img in HTML5
+- This is so that the screen reader can read the alt for the visually impaired
+- Thus it is important for the alt to a proper description of the image
+
+eg:
+<img src= "#" alt= "A photo of a dog eating food">
+
+However, since it is compulsory for there to be an alt- what happens when you don't need a description
+- Maybe because the image is for decoration only or if there is already a caption
+- Just have quotation marks but leave it black
+
+eg:
+<img src= "#" alt= "">

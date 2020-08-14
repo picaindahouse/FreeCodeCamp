@@ -1,0 +1,35 @@
+Lesson 2.2: Flex Direction
+
+* Nothing I have to add to these notes- this one is really just layout
+
+The flex-driection property defines which direction the container wants to stack the flex items
+- There are four possible flex-direction values:
+
+1) flex-direction: row;
+
+.flex-container {display: flex;
+                 flex-direction: row;}
+
+- This is the default setting if you do not specify which direction you want
+- Stacks the flex items horizontally from left to right
+
+2) flex-direction: row-reverse;
+
+.flex-container {display: flex;
+                 flex-direction: row-reverse;}
+
+- Stacks the flex items horizontally from right to left
+
+3) flex-direction: column;
+
+.flex-container {display: flex;
+                 flex-direction: column;}
+
+- Stacks the flex items vertically from top to bottom
+
+4) flex-direction: column-reverse;
+
+.flex-container {display: flex;
+                 flex-direction: column-reverse;}
+
+- Stacks the flex items vertically from bottom to top

@@ -1,0 +1,13 @@
+Lesson 3: Using Viewport to Make Text Responsive
+- We have learnt 2 types of units: fonts and relative
+- Well there is a special type of relative unit: Viewport (v)
+
+Viewport refers to the users screen and thus the unit size is relative to the users screen size
+
+Four different viewport units:
+- vw (viewport width): 10vw would be 10% of the viewport's width.
+- vh (viewport height): 3vh would be 3% of the viewport's height.
+- vmin (viewport minimum): 70vmin would be 70% of the viewport's smaller dimension (height or width).
+- vmax (viewport maximum): 100vmax would be 100% of the viewport's bigger dimension (height or width).
+
+Should be quite useful to make text be able to fit most screens

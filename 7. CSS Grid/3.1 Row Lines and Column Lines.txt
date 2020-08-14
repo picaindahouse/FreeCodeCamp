@@ -1,0 +1,16 @@
+Lesson 1.3: Row Lines and Column Lines
+
+Row lines are the lines between rows and thus by that logic column lines are lines between columns
+- The first lines and the last lines are the boundaries
+- When placing a grid item in a grid container, can specify the exact spot it is supposed to go into using the lines:
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+- Thus it will be between the first column line and the third one
+
+- Can use row-start and row-end along with the above to really set the boundaries of grid items
+
+Don't need to worry to much about this- will learn more about this when we learn the shorthands over the next three chapters

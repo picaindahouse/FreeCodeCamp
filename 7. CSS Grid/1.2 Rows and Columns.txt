@@ -1,0 +1,38 @@
+Lesson 1.2: Rows and Columns
+
+CSS Grid works in two dimensions
+  - Thus the container is split into rows and columns which can be manipulated at the same time
+    - Column: Vertical lines of the grid items
+    - Row: Horizontal lines of the grid items
+
+You can adjust the gaps between rows and columns using the following properties:
+
+1) grid-column-gap
+
+.grid-container {display: grid;
+                 grid-column-gap: 50px;}
+
+2) grid-row-gap
+
+.grid-container {display: grid;
+                 grid-row-gap: 50px;}
+
+3) grid-gap
+
+- Shorthand for the above two, column first then row
+
+.grid-container {display: grid;
+                 grid-gap: 50px 100px;}
+
+- Can be used to set the same value for both as well:
+
+.grid-container {display: grid;
+                 grid-gap: 50px;}
+
+- Now both row and column gaps are 50px
+
+
+
+
+
+

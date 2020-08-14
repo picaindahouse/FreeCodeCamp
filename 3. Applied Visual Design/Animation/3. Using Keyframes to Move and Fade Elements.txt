@@ -1,0 +1,39 @@
+Lesson 3: Using Keyframes to Move and Fade Elements
+We can use the Keyframes to Move and Fade Elements
+- Lets look at them seperately
+
+MOVE
+- Quite simple really, just change the location of the element at 0%, 50%, 100%
+  - Create a {} for each percentage
+  - Below I create a new color and a new location for 0%, 50% & 100%
+
+  @keyframes rainbow {
+    0% {
+      background-color: blue;
+      top: 0px;
+      left: 0px;
+    }
+    50% {
+      background-color: green;
+      top: 50px;
+      left: 25px;
+    }
+    100% {
+      background-color: yellow;
+      top: 0px;
+      left: -25px;
+    }
+  }
+
+FADE
+- Quite simple really, just use the opacity to make it seem like the element fades
+  - Below I made it such that for the duration specified: at the 50%, the element moves to the left and fades
+  - When you just put a single percentage, like 50%
+    - It goes from original to 50% to back to normal 
+
+  @keyframes fade {
+    50% {
+      left: 60%;
+      opacity: 0.1;
+    }
+  }

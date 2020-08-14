@@ -1,0 +1,43 @@
+Lesson 15: Pseudo Elements
+Pseudo-elements are used to style specified parts of an element.
+For example, they can be used to:
+- Style the first letter, or line, of an element
+- Insert content before, or after, the content of an element
+
+A Pseudo Element looks something like this:
+selector::pseudo-element {
+  property:value;
+}
+- Where selector refers to the element
+- The pseudo-element is the specified part of the element you wish to style
+
+NOTE:
+: is used for pseudo-class
+:: is used for pseudo-element
+
+There are five pseudo elements:
+- ::before
+  - Used to insert content before the content of an element
+  - h1::before {content: url(smiley.gif)}
+  - A smiley face before each h1 element
+
+- ::after
+  - Used to insert content after the content of an element
+
+- ::first-letter
+  - Used to style the first letter of a text
+  - p::first-letter {
+      color: #ff0000;
+      font-size: xx-large;
+    }
+
+- ::first-line
+  - Same as first-letter, just that instead of first letter style the first line
+
+- ::selection
+  - Selection basically lets you decide how an element will look when it has been highlighted
+  - h1::selection{ color:red;
+                   background: yellow;}
+  - Now whenever a h1 content is highlighted, the font will turn red and the background yellow
+
+That's All

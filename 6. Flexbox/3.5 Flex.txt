@@ -1,0 +1,16 @@
+Lesson 3.5: Flex
+
+* Nothing to add here
+
+# flex acts as a shorthand for flex-grow, flex-shrink and flex-basis
+
+<div style="flex: 0 0 200px">3</div>
+
+SAME AS
+
+flex-grow: 0 flex-shrink:0 flex-basis: 200px
+in that order
+
+# Have to specify the first 2- just put 0 if you don't want it to grow or shrink
+# If you don't specify flex-basis it will just take the default length
+# Really useful since you can specify the size of the element and how much it will grow and shrink in one line

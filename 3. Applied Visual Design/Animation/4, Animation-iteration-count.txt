@@ -1,0 +1,40 @@
+Lesson 4: Animation Iteration Count
+
+animation-iteration-count is the fourth property that we will be looking at
+- Allows you to decide how many times the animation will be repeated
+- animation-iteration-count: 1; means 1 time
+- animation-iteration-count: infinite; means infinite times
+  - This is how you make your animation repeat continuously 
+
+Eg:
+
+<style>
+
+  #ball {
+    width: 100px;
+    height: 100px;
+    animation-name: color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes color{
+    0% {
+      background-color: red;
+    }
+    50% {
+      background-color: yellow;
+    }
+    100% {
+      background-color: purple;
+    }
+  }
+
+</style>
+<div id="ball"></div>
+
+# The above will cause the square to change from red to yellow to purple forever on a loop
+# Interesting thing to add on in relation to pseudo elements
+  - When you create :before and : after pseudo elements they automatically inherit the same animation as the original element
+
+

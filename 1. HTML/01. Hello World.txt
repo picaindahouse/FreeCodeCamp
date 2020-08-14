@@ -1,0 +1,10 @@
+# Lesson 1: Hello World
+
+Html tags have an opening and a closing tag:
+Eg:
+<h1>: opening
+</h1>: closing
+
+h1 elements are often used as for main headings
+
+<h1>Hello World</h1>

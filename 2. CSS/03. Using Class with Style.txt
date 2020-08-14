@@ -1,0 +1,27 @@
+<!-- Lesson 3: Using style with Class
+In this lesson we learn how to use a Class with style
+
+Basically create a class by calling it ".something" and then equate it to something
+
+An example:
+<style>
+  .red-text{color:red;}
+</style>
+
+- This would mean that we have created a class called red-text
+- When this is applied to a tag, it will change the color of the text in that tag to red
+- Can be used in more than one tag
+
+Below I use the class I created above in a paragraph and a h2:
+-->
+
+<style>
+  .red-text {
+    color: red;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+<main>
+  <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
+</main>

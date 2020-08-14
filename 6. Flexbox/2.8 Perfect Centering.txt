@@ -1,0 +1,12 @@
+Lesson 2.8: Perfect Centering
+
+* Once again no changes here
+To get perfect centering for your flex items set both justify-content and align-items to center
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+# Makes complete sense since one centers vertically (align items) and one centers horizontally (justify content)

@@ -1,0 +1,91 @@
+Lesson 9: The Position Property
+The position property specifies the type of positioning method used for an element:
+- Static, relative, fixed, absolute or sticky
+- Then based on the method elements are positioned using the top, bottom, left and right
+
+STATIC
+- HTML elements are positioned static by default
+- Thus an element position: static; is not positioned in any special way
+- Basically, if you don't specify postion then it will be static
+
+RELATIVE
+- An element with position: relative; is positioned relative to its normal position
+- Setting the top, right, bottom and left properties of a relatively-positioned element will cause 
+  it to be adjusted away from its normal position.
+
+Eg:
+<style>
+  div {position: relative;
+       left: 30px;
+       top: 15px;}
+</style>
+
+# Now since <div> has been positioned relatively, when you add the properties left: 30px and top 15px
+  - <div> will move 30px away from its original 'left position'
+    - Basically by putting left: 30px; <div> will move 30px to the RIGHT
+  - <div> will move 15px away from its original 'top position'
+    - Basically by putting top: 15px; <div> will move 15px to the TOP
+
+Thus, postion: relative; will cause the element to move in the opposite direction to the property given 
+in relation to its original position
+
+
+FIXED
+- An element with position: fixed; is positioned relative to the users viewpoint
+  - This means that it always stays in the same place, EVEN when scrolled
+  - Usually used for the top bar- with links to home etc
+
+- Setting the top, right, bottom and left properties of a fixed-positioned element will cause it to be adjusted 
+  away from the browser
+  - This means that right: 0px and bottom: 0px will lead to the element being positioned at the bottom right hand corner 
+    and it won't move from there even when you scroll down
+
+Eg:
+<style>
+  div {position: fixed;
+       left: 30px;
+       top: 15px;}
+</style>
+
+# This will lead to <div> being positioned 30px from the left hand of the browser and 15px away from the top of the browser
+  - <div> will be fixed there, no matter how much you scroll
+
+
+ABSOLUTE
+- Since this might be a bit confusing: there is something I need to explain first
+  - An element essentially is a box, and elements inside elements are boxes within boxes
+- Thus an element with position: absolute; is positioned relative to its closest ancestor (basically its parent element)
+
+So for example:
+<html>
+  <body>
+    <div>
+      <h1>Hello World</h1>
+    </div>
+  </body>
+</html>
+
+Thus, <h1> would be positioned relative to <div>, <div> would be positioned relative to <body> and <body> is the highest
+- Therefore, when you use top, bottom, right and left- they are in relation to the parent element
+
+using the example above for the below example:
+<style>
+  h1 {position: absolute;
+      top: 20px;
+      left: 10px;}
+</style>
+
+# So to understand how the above example will work- let us go back to how elements are actually boxes
+  - This would mean that h1 would have to be positioned relative to the box of <div>
+  - Therefore, h1 would be 20px away from the top of <div> and 10px away from the left of <div>
+
+If you cannot visualise what I am saying go to ws3 
+
+STICKY
+- Sticky acts like a mix between fixed and relative
+- Basically, an element whose position is sticky will be relative in postioning until the user scrolls to the element
+  after which the element will become fixed
+- Search online if need for more visualisation
+- If I want to use: search online for use
+  - Need to see stuff like -webkit-sticky for Safari
+

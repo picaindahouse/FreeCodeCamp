@@ -1,0 +1,12 @@
+<!-- Lesson 1: Changing the Color of Text
+In this lesson, for the first and last time, we will be using the first way to style using CSS
+
+To use CSS via the first method- we simply add the style attribute to whichever tag we wish to change:
+- Say for example we want a h2 element to be red in color
+- We add the attribute: style = "color: red;" to the h2 tag
+- It is important to have the semicolon after the color
+
+The first method is often discouraged as it makes the script harder to read and reuse
+-->
+
+<h2 style = "color: red;">CatPhotoApp</h2>

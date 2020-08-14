@@ -1,0 +1,16 @@
+Lesson 4: Items vs Content vs Self
+
+Justify Content is the alignment of the Grid Horizontally
+- Thus the whole grid will align to the center if justify-content: center;
+
+Align Content is the alignment of the Grid Verically
+
+Justify Items is the alignment of the content within the items Horizontally
+- Therefore, all the items' content will be aligned in the center of their respective items
+- However, the grid itself will remain unchanged
+
+Align Items is the alignment of the content within the items Vertically
+
+Justify self and Align self override Justify Items and Align Items respectively
+
+

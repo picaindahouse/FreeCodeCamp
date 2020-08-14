@@ -1,0 +1,37 @@
+Lesson 8: Pseudo Classes
+Psuedo Classes are used to define a special state of an element
+
+Basically, what this means is that when something 'special' happens to an element
+- You can make them react a certain way
+
+For example, when the user's mouse hovers over the element you could change its color
+- Something like the buttons I made in 'A Bit Racing'
+
+A Pseudo Class looks something like this:
+selector:pseudo-class {
+  property:value;
+}
+- Where selector refers to the element
+- The pseudo-class is the special thing happening to the element
+
+
+Eg: (rmb a represents anchor- which anchors links to texts or imgs)
+/* unvisited link- when a link has not been visited*/
+a:link {
+  color: #FF0000;
+}
+
+/* visited link- when a link has been visited */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link- to make the link change color*/
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link- to show that the link has been pressed, while waiting for it to load */
+a:active {
+  color: #0000FF;
+}

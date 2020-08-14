@@ -1,0 +1,14 @@
+Lesson 2.4: Flex Flow
+
+* Once again no changes- just a shorthand
+
+flex-flow is a shorthand way to use both flex-direction and flex-wrap:
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+# Thus simply put flex-direction first and flex-wrap second:
+
+flex-flow: flex-direction flex-wrap;

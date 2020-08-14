@@ -1,0 +1,22 @@
+Lesson 3.2: Grid Column
+
+- The grid-column property defines which columns to place an item in
+- Shorthand for column start and column end
+
+Two ways:
+
+1) Without span
+
+.item1 {
+  grid-column: 1 / 5;
+}
+
+# Item starts in the 1st column and ends BEFORE the 5th column
+
+2) With span
+
+.item1 {
+  grid-column: 1 / span 3;
+}
+
+# Item starts in the 1st column and spans 3 column

@@ -1,0 +1,51 @@
+Lesson 5: Animation of Multiple Elements at Variable Rates
+
+Let us say there are multiple elements going through the same animation
+- Eg: Having multiple circles "blink"
+- Let us say there are multiple circles which have the exact same animation
+  - This would mean that they go through the same animation at the same time
+  - But what do we then do if we want to vary the timing
+    - Meaning that the one cirlce "blinks" first and the other one "blinks" instead of blinking together
+
+There are two ways to vary the animation of multiple elements
+- Change the % at which the animation happens
+- Change the animation-duration of the animation
+
+CHANGE %
+- The example below has two elements going through the same animation
+  - However, they vary in timing as one undergoes animation at 50% and the other at 20%
+
+  @keyframes twinkle-1 {
+    50% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes twinkle-2 {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+CHANGE ANIMATION-DURATION
+- While the first method changes the % in keyframes, in this method we change the animation-duration at the original style
+  - In the example below the first element has a duration of 1s and the other has a duration of 2s
+  - In this scenario both have a percentage of 20%
+
+  .star-1 {
+    margin-top: 15%;
+    margin-left: 60%;
+    animation-duration: 1s;
+    animation-name: twinkle;
+  }
+
+  .star-2 {
+    margin-top: 25%;
+    margin-left: 25%;
+    animation-duration: 2s;
+    animation-name: twinkle;
+  }
+
+Nice

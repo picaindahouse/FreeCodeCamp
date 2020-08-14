@@ -1,0 +1,17 @@
+<!-- Lesson 22: The Div Element
+
+The div element, also known as division element:
+- General purpose container for other elements
+
+Apparently the most commonly used HTML element of them all
+
+Probably will learn the usefullness of Div Element as time goes on
+-->
+
+<div>
+  <p>I hate you</p>
+  <ol>
+    <li>Tom</li>
+    <li>Tim</li>
+  </ol>
+<div>

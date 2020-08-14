@@ -1,0 +1,27 @@
+Lesson 5: Text Transform
+
+Using text-transform you can do multiple things to your text
+
+Let us say you used the following text transforms on: 'Tom go home' 
+
+text-transform: lowercase;
+'tom go home'
+
+text-transform: uppercase;
+'TOM GO HOME'
+
+text-transform: capitalize;
+'Tom Go Home'
+
+text-transform: inital;
+'Tom go home'
+- basically the same as the default value
+
+text-transform: inherit;
+'Tom go home'
+- use the text-transform from parent element
+
+Apply:
+Same as always:
+
+h1 {text-transform: uppercase;}

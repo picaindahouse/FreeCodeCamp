@@ -1,0 +1,25 @@
+# Step 1
+- Create folder
+- Turn it into a git repo
+- Create index.html (main page)
+- Create two folders within (img and css)
+- Create a style.css in css folder (all our design will be added in there
+
+
+Open index.html
+- Add all of the <meta>, <link> and <title> under <head>
+
+Just copy from here if needed:
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learning how to make a simple static site">
+    <meta name="keywords" content="First, New, How to make a website">
+    <meta name="author" content="Utkarsh">
+    <title>My First Website | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+# Use the link to connect style.css to index.html
+# The rest of the meta tags are not very important as of now- only the viewport one is necessary

@@ -1,0 +1,19 @@
+<!-- Lesson 14: Creating a Form Element
+Now that we have learnt to create a text field we need to learn how to indicate where the data written in 
+the text field should be sent
+- Won't be learning how to actually send the data till the next lesson
+
+We will nest our text field into a form element
+- Will learn how to create better forms via other methods in the future
+- But for now forms are tags in HTML with the attribute action
+- action = "/url-to-which-you-wish-to-send-the-link-to"
+- form element looks like this:
+
+<form action="/url-to-which-you-wish-to-send-the-link-to"> </form>
+
+Thus to create a form we nest the text field we created in lesson 13 into a form action which sends the form
+to "/submit-cat-photo"
+-->
+
+<form action="/submit-cat-photo"> <input type="text" placeholder="cat photo URL"></form>
+

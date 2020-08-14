@@ -1,0 +1,25 @@
+<!-- Lesson 7: Size your Images
+
+CSS has a property called width that controls an element's width. Just like with fonts,
+we'll use px (pixels) to specify the image's width.
+
+We can use class or style to size images, but in this case let us go with class
+- Probably better to go with class for size of img, or all img will have the same size
+
+Below you can see me sizing the cat image to have a width of 100px
+- The height of the image is also altered proportionately
+-->
+
+<style>
+
+  .smaller-image {
+    width: 100px;}
+
+</style>
+
+
+<main>
+
+  <a href="#"><img class= "smaller-image" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+</main>

@@ -1,0 +1,48 @@
+Lesson 3.6: Naming Grid Items
+
+# Using the shorthand grid-area method to layout the website is one way to do this
+# The other way to make a ready-to-use webpage template is to name the grid items
+# This method also uses grid-area but in a different way
+
+- Using an eg:
+Let us say that we have a grid with 5 columns and three rows and we wish to split the grid into the following 5 sections:
+  - Header, menu, main, right, footer
+
+1) We name the items using grid-area
+
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+
+2) Next we use a new property, grid-template-areas to visualise the entire grid
+
+grid-template-areas: '. . . . .'
+                     '. . . . .'
+                     '. . . . .';
+
+# Each dot represents one box in the 5 by 3 grid
+
+3) Place this property in the container that holds all of ther items
+
+.grid-container {
+  grid-template-areas: '. . . . .'
+                       '. . . . .'
+                       '. . . . .';
+}
+
+
+4) Finally place the items into the boxes they are to take up by replacing the dots with the names assigned to them
+
+.grid-container {
+  grid-template-areas: 'header header header header header'
+                       'menu main main right right'
+                       'menu footer footer footer footer';
+}
+
+# Thus the whole front will be occupied by the header, menu will be span two different rows but only one column
+
+# Therefore you can order your website by either manually assigning grid-areas to each section or just using this naming method
+
+

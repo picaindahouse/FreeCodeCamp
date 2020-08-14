@@ -1,0 +1,25 @@
+Lesson 20: Variable Fallbacks
+As you can see everything in HTML and CSS has a back-up
+
+A Simple Backup works while using the variable:
+<style>
+  :root {--tom: red;}
+  h1: {color: var(--tom, red);}
+</style>
+
+- As you can see above you add the back-up to the braket after var: var(--variable, back-up)
+
+A Back-Up for Browsers:
+- Certain browsers for whatever reason are unable to read variables
+- For these browsers we need to have a different type of back-up:
+<style>
+  :root {--tom: red;}
+  h1: {color: red;
+       color: var(--tom, red);}
+</style>
+
+- As you can see above we have created a color style before the color style where we use the variable
+- This is because CSS reads top to bottom and thus will apply what came last
+- Therefore, should the browser be able to read the variable- it will follow the latter, if it can't then it 
+will follow the former
+

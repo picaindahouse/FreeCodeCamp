@@ -1,0 +1,52 @@
+Lesson 2.3: Justify Content
+
+justify-content property is used to align the whole grid inside the container
+- The grid's total width has to be less than the container's width for the justify-content property to have any effect
+- This means that the column width cannot exceed that of the containers
+- Can just adjust the width of the container to allow for this
+
+A few options for justify-content: 
+- Same as justify-content in flexbox
+
+1) Space Evenly
+
+.grid-container {display: grid;
+                 justify-content: space-evenly;}
+
+# Gives the columns equal amount of space between, and around them
+
+2) Space Around
+
+.grid-container {display: grid;
+                 justify-content: space-around;}
+
+# Gives the columns equal amount of space around them
+
+3) Space Between
+
+.grid-container {display: grid;
+                 justify-content: space-between;}
+
+# Gives the columns equal amount of space between them
+
+4) Center
+
+.grid-container {display: grid;
+                 justify-content: center;}
+
+# Aligns the grid in the middle of the container
+
+5) Start
+
+.grid-container {display: grid;
+                 justify-content: start;}
+
+# Aligns the grid to the beginning of the container (left)
+
+6) End
+
+.grid-container {display: grid;
+                 justify-content: end;}
+
+# Aligns the grid to the end of the container (right)
+

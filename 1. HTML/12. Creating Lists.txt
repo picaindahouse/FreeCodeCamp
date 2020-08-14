@@ -1,0 +1,25 @@
+<!-- Lesson 12: Creating Lists
+Two type of lists:
+unordered <ul>
+- Bulleted Lists
+
+ordered <ol>
+- Numbered Lists
+
+Can add <p> before to title your lists
+-->
+
+
+<p>This is an unordered list:</p>
+
+<ul>
+  <li>Cool</li>
+  <li>Not</li>
+</ul>
+
+<p>This is an ordered list:</p>
+
+<ol>
+  <li>Not</li>
+  <li>Cool</li>
+</ol>

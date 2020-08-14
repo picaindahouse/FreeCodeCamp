@@ -1,0 +1,22 @@
+Lesson 3.2: Grid Row
+
+- The grid-row property defines which rows to place an item in
+- Shorthand for row start and row end
+
+Two ways:
+
+1) Without span
+
+.item1 {
+  grid-row: 1 / 5;
+}
+
+# Item starts in the 1st row and ends BEFORE the 5th row
+
+2) With span
+
+.item1 {
+  grid-column: 1 / span 3;
+}
+
+# Item starts in the 1st row and spans 3 row

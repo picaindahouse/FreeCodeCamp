@@ -1,0 +1,19 @@
+Lesson 2: Adjusting the Height and Width of an Element
+
+To adjust an element's height or width we can use both absolute and relative units
+- For this lesson we will just use an absolute unit (px)
+
+Pretty simple, to the element just add:
+width: 245px;
+height: 25px;
+
+However, this does not change the font-size or the size of the items in the element
+- It only changes the size of the element itself
+
+eg:
+<style>
+  h4 {width: 245px;}
+  .red-box {height: 200px;}
+</style>
+
+- As you can see above, can be used in classes as well

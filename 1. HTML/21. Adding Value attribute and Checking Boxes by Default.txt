@@ -1,0 +1,32 @@
+<!-- Lesson 21: Adding a Value Attribute and Checking Boxes by Default
+This lesson we will be learning two extra things
+
+There is one more additional attribute that we have to add to our checkboxes and radios: value
+- The value attribute is what tells the website what the user ticked actually means
+- Thus when the user checks a box named No- by default to the website- this tells it that the user is "on"
+- This is because on is the default value when the value attribute is not equated to anything
+- This does not really help us- thus we have to set a value attribute to tell the website what checking a box 
+actually means
+- Usually value = whateever your for and id are
+- Thus all the attributes your checkbox/ radio should have are:
+- id, type, name, value
+
+Now let us say you want certain boxes to be ticked by default:
+- Just add another attribute checked to these
+- Just write checked, this attribute does not have to equal anything
+- This would mean that the box for the input that has the attribute checked will be checked by default
+--> 
+
+<form action="/submit-cat-photo">
+  <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+  <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+
+  <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+  <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+  <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+
+  <input type="text" placeholder="cat photo URL" required>
+
+  <button type="submit">Submit</button>
+</form>
+

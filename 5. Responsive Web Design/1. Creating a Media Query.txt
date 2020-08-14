@@ -1,0 +1,35 @@
+Lesson 1: Creating a Media Query
+- Not the first time we are dealing with media queries (CSS Lesson 21)
+
+The word for word description I gave for media queries in CSS:
+Media queries is a CSS3 module allowing content rendering to adapt to conditions such as screen resolution. 
+
+This basically means that you can set conditions which when met react differently
+eg: If the screen is smaller than a certain size then all the sizes decrease
+
+How to apply:
+@media(condition){What happens when condition is met}
+
+There are many conditions you could create:
+- max-height: 200px;
+- max-width: 300px;
+
+Basically media queries work like if statements
+- if condition is met than _____
+
+Thus can use this to make one's website responsive
+- Create your website for small/ big screen
+- Then create responses to screen sizes which differs greatly from original screen the site was created on
+
+If your website looks fine until max-width: 800px
+- Then create a media query for width more than 800px, where everything increases
+- eg: say original font-size: 10px;
+
+<style>
+  @media (min-width: 800px;) {p {font-size: 20px;}}
+</style>
+
+# Note
+- As you can see above, you have to specify which element's size you are changing 
+- If you want to change for all either use inheritance by targeting the highest element
+  or create a class for all elements you wish to change and then apply the changes to the class

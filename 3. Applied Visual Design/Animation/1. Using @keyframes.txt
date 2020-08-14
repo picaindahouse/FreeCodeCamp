@@ -1,0 +1,43 @@
+Lesson 1: Using @keyframes
+One can use keyframes to animate their site
+
+Their are 8 different properties of keyframes you can use to animate, going through 2 today:
+- animation-name: used to identify which animation rules are for which element
+- animation-duration: how long the animation will last
+
+APPLICATION
+A keyframes with animation-name and animation-duration will look something like this:
+
+<style>
+  #tom {
+    animation-name: cool;
+    animation-duration: 4s;
+  }
+
+  @keyframes cool {
+    0% {background-color: blue;}
+    50% {background-color: green;}
+    100% {background-color: yellow;}
+  }
+
+  div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
+</style>
+
+<div> id= "tom"></div>
+
+# So what is going on here?
+- The above creates an animation where a rectangle changes color from blue to green to yellow over a 4s time period
+- First you create the animation-name and animation-duration in the id of an element
+- Then create the rules of the animation in a @keyframes followed by the animation-name
+  - In this case the rules are to be created in @keyframes cool{}
+- 0% is what happens at the start of the 4 seconds and 100% is at the end
+  - Thus in the above scenario we are telling the box to go from blue at 0s to green at 2s to yellow at 4s
+
+
+THUS for an animation, write the properties under an id tag and then the rules under a @keyframes animation-name tag

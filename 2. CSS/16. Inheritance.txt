@@ -1,0 +1,29 @@
+# Lesson 16: Inheritance
+In this lesson we will be looking at inheritance
+- To make things easier, I won't be commenting things out
+- So this document cannot be turned into a HTML
+
+<html>
+  <body>
+    <h1>Hey</h1>
+    <p>I went home yesterday, I have been lost since then</p>
+  </body>
+</html>
+
+- To style the above html, what if I did something like this:
+
+<style>
+
+  body {color: green;
+        font-size: 15px;
+        font-family: monospace;}
+
+</style>
+
+- Now the style has only be applied to the <body> but since <h1> and <p> are technically part of the <body> 
+will this style also be applied to them
+
+- Unless the style applied to the <body> is overrided, the style applied to <body> will also be applied to <h1> and <p>
+  - Next lesson will go into what overrides what
+
+- This is called style inheritance, unless overridden- an element within another element will inherit the latter elements style

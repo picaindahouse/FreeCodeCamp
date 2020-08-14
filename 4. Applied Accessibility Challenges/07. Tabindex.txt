@@ -1,0 +1,13 @@
+Lesson 7: Tabindex
+
+When you are a keyboard only user- you usually press tab to navigate through the website
+However, tab by default only visits certain elements like links and inputs
+  - What if you want it to visit an element that would not be visited by default?
+
+Add tabindex = "0" to the element as an attribute:
+
+<h1 tabindex = "0">Hey</h1>
+
+- Now <h1> which is not an element that tab would visit by default will be visited by default
+
+You can also have stuff like tabindex = "1", "2" BUT it is not recommended so that's that

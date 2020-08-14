@@ -1,0 +1,27 @@
+# Just the impt stuff
+1) Link to .css from .html (under <head>):
+    <link rel="stylesheet" href="./css/style.css">
+
+2) Ensure that all you content in a html file is under a <div class = "container"> 
+- Prob best to give ids to most stuff as well, eg sections
+- So that all your content follows the same layout
+- Give elements that require special layouts, personal classes or ids
+
+eg:
+    <header>
+        <div class="container">
+            <div id = "title">
+                <h1>My First Website</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+- both <nav> and <h1> are under a <div class="container">, but since I wish to style h1 further
+  - h1 is under id = "title" as well

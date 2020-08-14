@@ -1,0 +1,27 @@
+Lesson 3.4: Grid Area
+
+A shorthand for a shorthand- that is what grid-area is a shorthand for grid-row and grid-column which are already shorthands
+
+grid-area: row-start/ column-start/ row-end/ column-end;
+
+Same as always, two ways to do it:
+
+1) Without span
+
+.item1 {
+  grid-area: 1 / 2 / 5 / 6;
+}
+
+# item1 will start on row 1 and end before row 5
+# item1 will start on column 1 and end before column 6
+
+2) With span
+
+.item1 {
+  grid-area: 2 / 1 / span 2 / span 3;
+}
+
+# item1 will start on row 2 and span 2 rows
+# item1 will start on column 2 and span 3 columns
+
+Still have not ended- still got naming left

@@ -1,0 +1,53 @@
+Lesson 2.4: Align Content
+
+align-content property is used to vertically align the whole grid inside the container
+justify-content property is used to align the whole grid inside the container
+- The grid's total height has to be less than the container's height for the align-content property to have any effect
+- This means that the row height cannot exceed that of the containers
+- Can just adjust the height of the container to allow for this
+
+A few options for align-content: 
+- Same as align-content in flexbox
+
+1) Center
+
+.grid-container {display: grid;
+                 align-content: center;}
+
+# Aligns the grid in the middle of the container
+
+2) Space Evenly
+
+.grid-container {display: grid;
+                 align-content:space-evenly;}
+
+# Gives the rows equal amount of space between, and around them
+
+3) Space Around
+
+.grid-container {display: grid;
+                 align-content:space-around;}
+
+# Gives the rows equal amount of space around them
+
+4) Space Between
+
+.grid-container {display: grid;
+                 align-content:space-between;}
+
+# Gives the rows equal amount of space between them
+
+
+5) Start 
+
+.grid-container {display: grid;
+                 align-content: start;}
+
+# Aligns the grid to the beginning of the container (top)
+
+6) End
+
+.grid-container {display: grid;
+                 align-content: end;}
+
+# Aligns the grid to the end of the container (bottom)

@@ -1,0 +1,45 @@
+Lesson 2: Header Hierachy and Importance of Tag Accuracy
+Again combining two unrelated topics together
+
+HEADER HIERACHY
+- h1 to h6, have to be used in a hierachy with larger numbers beings subsections to larger ones
+  - This help assitive tech to be able to distinguish the order of the page for their users
+- h1 should only be used once to signify the main header
+
+IMPORTANCE OF TAG ACCURACY
+- Once again it is important to use the right tag for the right occasion
+  - One could simply use <div> to replace everything: <footer>, <p>, <header>, <nav>, <section>, etc
+- However, it is important to use the right tag to allow assistive tech to acces the information better 
+and provide better page summary or navigation options to their users
+- <main> element should be used only once and it should cover the main content of the page
+
+Let's look at some of the following tags: <article>, <section>, <div>, <header>, <nav> and <footer>
+
+ARTICLE
+<article> is a new HTML5 element that is used to wrap independent, self-contained content.
+- Works well with blog entries, forum posts, or news articles
+- Whether a content can be an element is a judgement call but one should ask themselves this:
+  - If you removed all surrounding context, would that content still make sense?
+
+SECTION
+<section> is also a new HTML5 element which is used to group things thematically:
+- So that means sections ususally have a relationship with each other
+- For example a book can be an <article> and the chapters would be <sections>
+
+DIV
+<div> is for when there is no thematic relationship between elements, but they cannot be standalone content
+
+The following along with <main> have a landmark feature which let's assistive devices to quickly navigate to them
+
+HEADER
+<header> is used NOT as the title of the page 
+- The best way to explain it would be to go to go to freecodecamp and look at the top where there is a dark blue element
+which says freecodecamp in the middle and has a few links on the left: That is an example of a <header>
+
+NAV
+<nav> is used instead of a <div> when multiple links are put together 
+- If the links are all at the bottom, don't use NAV just use footer
+- An example would be a table of contents page with alot of links in it 
+
+FOOTER
+<footer> sits at the bottom of the page, usually with copyright information or links to related documents

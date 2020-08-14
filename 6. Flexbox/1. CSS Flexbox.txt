@@ -1,0 +1,14 @@
+# Lesson 1: CSS Flexbox
+
+- I basically completed the rest of the notes before doing this one- oh how I wish I completed this one first
+
+- I thought flexbox was a layout design tool, which while partially true- does not tell its real use
+  - It acts as a responsive layout tool: meaning that it dictates how the website will look based on the difference in screen
+  - It decides whether an element will remain big when the screen is smaller or shrink to accomodate the smaller screen size
+
+- Thus while I will now go on and attempt to rectify my mistake and give a bit more insight into my notes with regards to flexbox's true capabilites
+  - Try to read the following notes with what I have said in mind to understand the true greatness of flexbox
+
+- * Star represent notes from the me who is coming in to rectify the notes from layout to responsive layout
+
+- Also you wish to visualise all of the layout described here just use the cheatsheet I have bookmarked or go to WS3 for actual hands on experience

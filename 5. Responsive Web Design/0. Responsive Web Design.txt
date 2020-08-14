@@ -1,0 +1,4 @@
+Lesson 0: Responsive Web Design
+# Responsive Web Design is making your website react differently based on the size of the user's screen
+- Meaning that the website on the phone would shrink the content of the page to fit the smaller screen
+- There are probably better ways to do more complicated versions of this but can use CSS for a quick fix

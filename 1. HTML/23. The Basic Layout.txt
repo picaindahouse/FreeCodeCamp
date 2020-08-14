@@ -1,0 +1,36 @@
+<!-- Lesson 23: The Basic Layout
+Till now we have learnt how to use most of the basic stuff in HTML
+However, we have not yet learnt the very basic building blocks of HTML:
+- First you start of with informing the browser which version of HTML 
+you are using
+  - For HTML5, just write: <!DOCTYPE html>
+  - DOCTYPE is caps senstitive whereas html is not
+
+- Then your whole code is to be wrapped in a html tag
+  - Thus you start with <html> and end with </html>
+
+- Finally before you can begin split everything one more time into:
+  - <head>
+    - Any markup information goes into head
+    - For now we just learn title
+    - <title>Is whatever you want to be written on the tab</title>
+
+  - <body> 
+    - This is where all the content you wish for the user to see are 
+      to be written
+    - Basically everything we have learnt till now, goes here
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    </title>
+  </head>
+
+  <body>
+    <main>
+      <!-- Everything we have learnt till now goes here -->
+    </main>
+  </body>
+</html>

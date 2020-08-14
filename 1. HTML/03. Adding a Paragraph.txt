@@ -1,0 +1,10 @@
+# Lesson 3- Adding a paragraph
+
+<p> creates a paragraph for you </p>
+Note: html tags are in lower caps
+
+Thus adding to our code:
+
+<h1>Hello World</h1>
+<h2>CatPhotoApp</h2>
+<p>Hello Paragraph</p>

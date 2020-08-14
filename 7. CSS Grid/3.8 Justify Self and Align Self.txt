@@ -1,0 +1,14 @@
+Lesson 3.8: Justify Self and Align Self
+
+- Basically justify self is justify items specifically for an individual item (overides justify content)
+- Same for align self and align items
+
+Justify self and align self are default set to stretch but can also be one of the following:
+
+1) center
+
+2) start
+
+3) end
+
+# How the above work should be understood as it has been covered in both justify content and align content

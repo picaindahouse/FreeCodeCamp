@@ -1,0 +1,89 @@
+<!-- Lesson 14: Transform
+
+Transform allows elements to well transform
+- Can turn this into HTML to see the transformations, the first one is the original one
+
+Many different ways one can transform, see all on ws3
+Focus only on a few:
+- scale, skew, translate, rotate
+
+SCALE
+- Scale basically multiplies the element by a specified amount
+- Can be either (x,y) or (a)
+- Should you only write one number than both x and y will be scaled by that amount
+- If you write two different numbers than the element will be scaled accordingly
+
+Can also use scaleX or scaleY- scaleX(x) and scale(y)
+
+Application:
+div {transform: scale (3);}
+div {transform: scale (3,4);}
+div {transform: scaleX (3);}
+div {transform: scaleY (4);}
+
+SKEW
+- Scale basically skews the element by a specified amount
+- Can only be (x-angle,y-angle)
+
+Can also use skewX or skewY- skewX(xdeg) and skewY(ydeg)
+
+Application:
+div {transform: skew (3deg, 4deg);}
+div {transform: skewX (3deg);}
+div {transform: skewY (4deg);}
+
+TRANSLATE
+- Translate basically moves the element in a specified direction
+- Can only be (x,y)
+
+Can also use translateX or translateY- translateX(x) and translateY(y)
+
+Application:
+div {transform: translate (10px, 15px);}
+div {transform: translateX (10px);}
+div {transform: translateY (15px);}
+
+ROTATE
+- Rotate rotates based on specified angle
+
+Application:
+div {transform: rotate(30deg)}
+-->
+
+
+<style>
+  div {
+    width: 50px;
+    height: 100px;
+    margin:  50px;
+    background-color: blue;
+  }
+
+  #scale {transform: scale(1.5);}
+  #scaleX {transform: scaleX(1.5);}
+  #scaleY {transform: scaleY(1.5);}
+  #skew {transform: skew(25deg,30deg);}
+  #skewX {transform: skewX(25deg);}
+  #skewY {transform: skewY(30deg);}
+  #translate {transform: translate(100px,-50px);}
+  #translateX {transform: translateX(100px);}
+  #translateY {transform: translateY(-50px);}
+  #rotate {transform: rotate(25deg)}
+</style>
+
+<html>
+  <body>
+    <div id= "original"></div>
+    <div id= "scale"></div>
+    <div id= "scaleX"></div>
+    <div id= "scaleY"></div>
+    <div id= "skew"></div>
+    <div id= "skewX"></div>
+    <div id= "skewY"></div>
+    <div id= "translate"></div>
+    <div id= "translateX"></div>
+    <div id= "translateY"></div>
+    <div id= "rotate"></div>
+  </body>
+</html>
+

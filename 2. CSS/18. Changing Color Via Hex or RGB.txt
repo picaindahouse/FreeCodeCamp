@@ -1,0 +1,31 @@
+<!- Lesson 18: Changing Color Via Hex or RGB
+
+Till now we have added color to text or background by just writing the color we want them to be 
+eg: h1 {color: black;}
+
+However, this limits us in the choice of colors we have to choose from
+- There are two ways to add color which give us far more variety
+
+HEX: 6 numbers of digits or letters, lowest 0 largest F
+eg: black- #000000 (first two numbers r, then next two blue, last two green)
+
+h1 {color: #000000;}
+
+- If you want to shorten the code, there is also abbreviated HEX, just three digits one each for RGB
+
+h1 {color: #F0F;)
+
+RGB: Have used before in pygames, thus should have no need for an explanation
+
+h1 {color: rgb(004, 123, 143);}
+
+Two find out what the HEX or RGB code of a color is- just search online
+Prob best to use RGB since I already have quite a bit of experience with it
+-->
+
+<style>
+
+  .red-text{color: rgb(255,0,0);}
+  .black-text{color: #000000;}
+  
+</style

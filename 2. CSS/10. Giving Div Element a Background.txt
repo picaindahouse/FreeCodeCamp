@@ -1,0 +1,38 @@
+<!-- Lesson 10: Give a Background Color to a Div Element
+Basically, you can have background color to entire div elements
+- This is one of the benefits of splitting your content into different div
+
+We will be using class to change the color of the background since it makes no sense to have all the div elements in the same color
+
+Below we make the background of the div silver in color,
+Everything under <div> will have a silver background
+-->
+
+<style>
+
+  .silver-background {
+  background-color: silver;}
+
+  p {
+    font-size: 16px;
+    font-family: monospace;}
+
+</style>
+
+
+<main>
+  <div class = "silver-background">
+    <p>Things cats love:</p>
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+  </div>
+</main>

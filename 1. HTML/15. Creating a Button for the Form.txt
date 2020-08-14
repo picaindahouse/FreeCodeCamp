@@ -1,0 +1,18 @@
+<!-- Lesson 15: Adding a Submit Button to the Form
+Now we have the location we wish the data to be sent to and a text field
+- We just need to be able to allow the user to submit what he has written into the text field
+- For this we create a button and nest in the form function as well 
+
+A button element works like this:
+<button type="submit">this button submits the form</button>
+- For now since we just wish to submit we will only use type = "submit"
+- Nest the button element under the form element
+
+Thus our new form should look something like this:
+--> 
+
+<form action="/submit-cat-photo">
+  <input type="text" placeholder="cat photo URL">
+  <button type="submit">Submit</button>
+</form>
+

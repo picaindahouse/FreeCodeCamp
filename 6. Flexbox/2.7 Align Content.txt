@@ -1,0 +1,66 @@
+Lesson 2.7: Align Content
+
+* Once again, nothing much here just the alignment of flex lines to layout wrap 
+* Basically make it look nicer when wrap reacts to change in screen size
+
+The align-content property is used to align the flex lines
+- flex-lines are the lines created when you wrap your elements
+- There are 7 different ways to align the lines:
+
+1) align-content: stretch;
+
+.flex-container {display: flex;
+                 flex-wrap: wrap;
+                 align-content: stretch;}
+
+- This is the default setting
+- Have to flex-wrap to be able to use align-content since you are trying to align the lines created due to wrap
+- The stretch value stretches the flex lines to take up the remaining space
+
+2) align-content: space-between;
+
+.flex-container {display: flex;
+                 flex-wrap: wrap;
+                 align-content: space-between;}
+
+- Displays the flex lines with equal space between them
+
+3) align-content: space-around;
+
+.flex-container {display: flex;
+                 flex-wrap: wrap;
+                 align-content: space-around;}
+
+- Displays the flex lines with space before, after and between them
+
+4) align-content: space-evenly;
+
+.flex-container {display: flex;
+                 flex-wrap: wrap;
+                 align-content: space-evenly;}
+
+- Displays the flex lines with equal space before, after and between them
+
+5) align-content: center;
+
+.flex-container {display: flex;
+                 flex-wrap: wrap;
+                 align-content: space-center;}
+
+- Displays the flex lines in the middle of the container
+
+6) align-content: flex-start;
+
+.flex-container {display: flex;
+                 flex-wrap: wrap;
+                 align-content: flex-start;}
+
+- Displays the flex lines at the start of the container
+
+7) align-content: flex-end;
+
+.flex-container {display: flex;
+                 flex-wrap: wrap;
+                 align-content: flex-end;}
+
+- Displays the flex lines at the end of the container

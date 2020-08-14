@@ -1,0 +1,39 @@
+ <!-- Lesson 12: Padding and Margins of an Element
+- In this lesson we will be learning about paddings and margins
+
+Padding of an Element
+- An element's padding is essentially the space between the element's content and it's border
+- Thus increasing the padding will essentially make the content smaller
+- Adjust it using pixels, eg- padding: 20px
+
+Margin of an Element
+- An element's margin is the space between the element's border and other elements
+- Thus increasing the margin will make the content look smaller
+- Adjust it using pixels, eg- margin: 20px
+- A negative margin will make the element even bigger
+
+As you can see below with the blue and red boxes, you have to experiment around with padding and margin
+- Until you find the design you like best
+-->
+
+<style>
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 10px;
+    margin: -10px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>

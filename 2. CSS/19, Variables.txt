@@ -1,0 +1,39 @@
+Lesson 19: Variables
+Variables are used to define certain things
+eg: --pencolor: blue;
+
+Now we can use the variable pencolor multiple times, knowing that it equals blue
+- This is beneficial since when one wants to change the value of pencolor, we can just change the variables value
+instead of having to change the color blue multiple times
+
+Creating a Variable:
+I have already showed it above, but basically have to put -- before the variable
+eg: --tom: red;
+- Now we have a variable called tom
+
+Using a Variable
+Simply, equate it to var(--variable)
+
+Eg:
+<style>
+  :root {--tom: red;}
+  h1 {color: var(--tom);}
+</style>
+<html>
+  <h1>Hello World</h1>
+</html>
+
+- As you can see above, the variable tom basically represents red and has been applied to the h1 element
+
+:root:
+:root is usually where you put all of your variables in as it allows all the variables inside to be Global Variables
+- This means that they can be used in all of the elements
+
+However, should you want a variable to be specific- just create it inside the element
+eg: 
+<style>
+  h1 {--tom: red;
+      color: var(--tom);}
+</style>
+
+That is all for now- learn about backups next time

@@ -1,0 +1,38 @@
+Lesson 4: Horizontal Line, rgba and Opacity
+
+Joining three small things together:
+
+Horizontal Lines:
+<hr> is a self closing tag (means no </hr>) which draws a horizontal line across the page
+- Use it to mark a thematic change or the start of a new section
+
+rgba:
+- I have used rgb in the past, rgba is basically rgb with another addition
+- The a stands for alpha which basically means level of opacity
+- 0 means transparent and 1 means opaque
+- Anything in between will result in a translucent color
+
+eg: rgba(45,45,45, 0.1) results in a translucent gray color
+- Can be used as a background for text
+- Basically, whenever you many need a translucent color
+
+Opacity:
+Since we already started talking about opacity
+- Let's learn how to decrease an element's opacity
+
+Simply add- opacity: 0.4;
+- Where 0 is transparent and 1 is opaque
+
+Eg of all three of the above:
+
+<style>
+  h1 {background-color: rgba(45,45,45,0.1);}
+  h2 {color: white;
+      background-color: black;
+      opacity: 0.4;}
+</style>
+<html>
+  <h1>I Hate You</h1>
+  <hr>
+  <h2>He hates you too</h2>
+</html>

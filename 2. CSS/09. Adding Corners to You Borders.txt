@@ -1,0 +1,44 @@
+<!-- Lesson 9: Adding Corners to your Borders
+Two ways to do this
+- Either have rounded edges or have a circular border
+- Both methods use border-radius
+
+1) border-radius = 10px
+- Equating the border-radius to pixels
+- Larger radius usually result in rounded edges
+- Whereas smaller radius result in a circular border
+
+2) border-radius = 50%
+- Equating the border-radius to percentage
+- Larger percent usually result in a circular border
+- Whereas smaller percent usually result in rounder edges
+-->
+
+<style>
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px;
+  }
+
+  .thin-red-border {
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+
+<main>
+
+  <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+  <a href="#"><img class="smaller-image thin-red-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+</main>

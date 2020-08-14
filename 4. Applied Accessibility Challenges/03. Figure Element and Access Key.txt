@@ -1,0 +1,33 @@
+Lesson 3: Figure Element and Access Key
+
+Two unrelated things once again
+
+FIGURE
+You use <figure> to inform the screen reader that a visual representation (like an image or chart) is coming up
+- Add <figcaption> to get a caption as well
+
+eg:
+
+<figure>
+  <img src="roundhouseDestruction.jpeg" alt="Photo of Camper Cat executing a roundhouse kick">
+  <br>
+  <figcaption>
+    Master Camper Cat demonstrates proper form of a roundhouse kick.
+  </figcaption>
+</figure>
+
+# This would mean the screen reader would know a visual representation is coming up and the image will have a caption
+
+ACCESS KEY
+
+Keyboard shortcuts- basically you want to jump to a section of a website by just pressing a key on the keyboard
+use access keys
+
+- Works on all elements, simply:
+
+<html>
+  <h1 accesskey = "h">Hi<h1>
+  <h2><a id="first" href="#" accesskey="g">The Garfield Files: Lasagna as Training Fuel?</a></h2>
+</html>
+
+- How this works is when you press h, you would go to the h1 and if you press g, you would go to the h2 element

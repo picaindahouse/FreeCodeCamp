@@ -1,0 +1,29 @@
+Lesson 3.7: Comparing the Two Methods
+
+# We learnt the order method and the naming method let us compare them
+# Both methods below give the same result:
+
+1) Naming
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  grid-template-areas: 'header header header header header'
+                       'menu main main right right'
+                       'menu footer footer footer footer';
+}
+
+
+2) Order
+.header {grid-area: 1/ 1/ span 1/ span 5;}
+.menu { grid-area: 2/ 1/ span 2/ span 1; }
+.main { grid-area: 2/2/span 1/ span 2; }
+.right { grid-area: 2/4/span 1/ span 2; }
+.footer { grid-area: 3/ 2/ span 1/ span 4;}
+
+
+# I guess the main difference is that while order is more compact naming let's you visualise the layout
+  even before you run it and thus is probably better for more complicated layouts

@@ -1,0 +1,44 @@
+Lesson 2.3: Flex Wrap
+
+* So as I have said in my first lesson- flexbox deals with responsive layout (how the layout reacts to change in screen size)
+* Wrap is a very powerful technique to help a website's layout react to changes in screen size
+* What does wrap even mean?
+  - Basially it controls whether a property is single-line or multi-line
+    - Thus if nowrap:
+      - The child elements will always be in one line, so if the screen size
+        shrinks the user will not be able to see the whole line
+
+    - If wrap
+      - The child elements will adjust and become multi-lined based on screen size
+      - Thus the elements could be in a single line on a laptop but have the lines 
+        on a phone
+
+The flex-wrap property specifies whether the flex item should wrap or not
+- There are three possible flex-wrap values
+
+1) flex-wrap: nowrap;
+
+.flex-container {display: flex;
+                 flex-wrap: nowrap;}
+
+- This is the default setting
+- Specifies that the flex items will not wrap
+
+2) flex-wrap: wrap;
+
+.flex-container {display: flex;
+                 flex-wrap: wrap;}
+
+- Specifies that the flex items will wrap if necessary
+
+3) flex-wrap: wrap-reverse;
+
+.flex-container {display: flex;
+                 flex-wrap: wrap-reverse;}
+
+- Specifies that the flex items will wrap if necessary in reverse order
+  - If all the elements can fit in a single line then they will be in the original order
+  - However, if the elements have to wrap into multiple lines
+       - Then, they will do so in reverse
+
+  

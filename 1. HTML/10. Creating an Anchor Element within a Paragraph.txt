@@ -1,0 +1,24 @@
+<!-- Lesson 10: Nest an Anchor Element within a Paragraph
+Want to have a link in the middle of a sentence?
+
+Just add the anchor element within the paragraph:
+
+<p>
+  View more cat photos
+</p>
+
+and
+
+<a href = "#" target = "_blank">cat photos</a>
+
+To combine the above two, just copy the latter and replace the cat photos
+with it
+
+As seen below:
+-->
+
+<p>
+  View more <a href="#" target="_blank">cat photos</a>
+</p>
+
+

@@ -1,0 +1,30 @@
+<!-- Lesson 6: Back-Up Fonts
+When you get fonts from Google Fonts, you need a back-up font
+- This is in case of a scenario, where for whatever reason the browser cannot find you imported font
+- In this case you need a backup font, a default font at that
+
+To do this, whenever you equate a font-family to an imported font
+- After writing the imported font
+- Do not ; but rather , default font;
+
+As such:
+h2 {font-family: Lobster, monospace;}
+
+Often Google Fonts give suggestions for good back-up fonts
+-->
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, monospace;
+  }
+
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+

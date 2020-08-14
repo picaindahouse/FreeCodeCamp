@@ -1,0 +1,7 @@
+Step 3:
+- Added all the remaining content for the mainpage
+  - Forms, footer, showcase, etc
+
+- Can read through but nothing that impt
+
+- Rmb to always class or id most of your items- makes layout much easier later

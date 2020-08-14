@@ -1,0 +1,18 @@
+Lesson 3.4: Flex Basis
+
+* Nothing to add here
+
+# The flex-basis property specifies the initial length of the child element
+- A few ways to do that:
+% or px
+- Can use px as per norm or use % in relation to the length of the parent element
+
+Usage:
+<div style="flex-basis: 10px">Hey</div>
+
+<div style="flex-basis: 10%">Hey</div>
+
+
+# As the name suggests this is the basis of you element thus you should use this to specify the original size of the elements
+  - It will grow and shrink from there
+  - Thus use this instead of using width when using flexbox as it is more convenient since you can use flex (learnt in the next lesson)

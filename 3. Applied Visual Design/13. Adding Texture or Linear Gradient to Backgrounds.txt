@@ -1,0 +1,51 @@
+<!--  Lesson 13: Adding Texture or Linear Gradient to Backgrounds
+Have already tried to add the above to colors- does not work
+The following only work for background: ________
+To see how everything looks like, can convert this into HTML
+
+LINEAR GRADIENT
+- Linear Gradient takes two or more colors and goes from one to another
+- To have a better idea, best to convert this into HTML 
+
+Application:
+background: linear-gradient(angle in deg, color 1, color2, ...);
+- Can have as many colors as you want
+- The angle is used to decide at what angle do you wish the colors to transition at
+- Linear Gradient is used for body in the example below
+
+
+REPEATING LINEAR GRADIENT
+- Repeating Linear Gradient is the same as Linear Gradient just that as the name signifies, it repeats
+
+Application: 
+    background: repeating-linear-gradient(angle in deg, 
+      color distance from left edge,
+      color distance from left edge,
+      so on and so forth- can have as many colors as you want);
+
+- Understanding how the distance stuff works is crucial
+  - Let's say yellow 0px, green 40px, purle 40px, red 80px
+  - This means that it will start from yellow at the left most edge
+  - Then transition over to green at 40px away from left edge
+  - Then since purple is also at 40px, Green will end at 40px and purple will start at 40px
+  - The purple will then slowly transition to red which is 80px
+  - The whole thing will then repeat multiple times
+- Used for the <p> background
+
+TEXTURE
+- Texture is pretty simple, find a texture you like online and copy the url
+Then Application:
+background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+- Used for the <h1> element
+-->
+
+<style>
+  body {background: linear-gradient(35deg, #CCFFFF,#FFCCCC);}
+  p {background: repeating-linear-gradient(45deg, yellow 0px, green 40px, purple 40px, red 80px);}
+  h1 {background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);}
+</style>
+
+<body>
+  <h1>Hello World</h1>
+  <p> I hate you, so lets go boom, yea </p>
+</body>

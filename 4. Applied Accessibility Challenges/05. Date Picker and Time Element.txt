@@ -1,0 +1,32 @@
+Lesson 5: Date Picker and Time Element
+
+Continuing on from the forms theme of the last lesson, let us learn another form type
+type= "date" let's users choose the date for the form
+
+This is how everything will look like:
+
+<form>
+  <label for="input1">Enter a date:</label>
+  <input type="date" id="input1" name="input1">
+</form>
+
+Some browsers are too old for date types and might just give a text field
+- Best to have a placeholder for the text in these case to show how to type the date
+
+TIME ELEMENT
+Since, we are already talking about time- let us look at the time element
+
+THIS DOES NOT ADD ANYTHING to the user experience for a normal user
+- This, like a lot of other things in this chapter, is for a screen reader
+  - Gives a standardized version of a time, even if it's written in an informal manner
+
+To understand how it works, let us look at an example:
+ <p>Master Camper Cat officiated the cage match between Goro and Scorpion 
+<time datetime="2013-02-13">last Wednesday</time>, which ended in a draw.</p> 
+
+# In the above example, to help a user that needs a screen reader- the informal manner that 
+I have written "last Wednesday" will also be read as 2013-02-13 to avoid any confusion for 
+such a user
+
+# Thus to use time element- wrap an informal version of time with a more formal version:
+<time datetime= "2020-02-03">Today</time>

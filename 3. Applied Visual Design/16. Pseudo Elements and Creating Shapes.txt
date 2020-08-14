@@ -1,0 +1,7 @@
+Lesson 16: Pseudo Elements and Creating Shapes
+For the ::before and ::after pseudo-elements to function properly, they must have a defined content
+- In the example given for ::before in the lesson before: I placed an image 
+- However, when creating shapes- you can leave the content empty:
+  - content = ""
+
+When I am able to- go back to learn how to use pseudo elements to make a heart

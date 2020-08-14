@@ -1,0 +1,30 @@
+<!-- Lesson 2: Responsive Web Design for Images
+- Can use media queries for more complicated scenarios, but to simply resize the image to fit the screen:
+  - One can just use auto
+
+Made this htmlable so that I can try out later
+- But basically by doing the following any image will fit the screen:
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+- Set max-width to 100% to ensure that the width does not exceed the screen
+- Set height to auto as this would mean that the images height will automatically react to it's width
+- That is why for a more complicated change, should use media as you can only play around with % in this method
+-->
+
+
+<style>
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  width: 600px;
+}
+</style>
+
+<img class="responsive-img" src="https://s3.amazonaws.com/freecodecamp/FCCStickerPack.jpg" alt="freeCodeCamp stickers set">
+
+<!-- For images that are not looking sharp enough do to high resolutions- just halve it's dimensions -->

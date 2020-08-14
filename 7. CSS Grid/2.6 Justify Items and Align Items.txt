@@ -1,0 +1,12 @@
+Lesson 2.6: Justify Items and Align Items
+
+Justify Items and Align Items help align the content within the items
+- Content on the other hand align the grids
+
+Can be defined in the following few ways:
+1) Start
+2) End 
+3) Center
+4) Stretch (default)
+
+- What they all do should be quite self-explanatory by now

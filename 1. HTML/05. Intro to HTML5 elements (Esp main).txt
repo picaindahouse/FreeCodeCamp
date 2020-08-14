@@ -1,0 +1,27 @@
+# Lesson 5- Intro to HTML5 Elements
+
+The following are all HTML5 elements:
+main, header, footer, nav, video, article, section
+
+The above elements give a descriptive structure to your HTML, making
+your HTML easier to read and also help with Search Engine Optimization
+
+We will be using main in this example:
+The main HTML5 tag helps search engines and other developers find the 
+main content of your page
+For stuff under main must have two spaces first
+
+Below I use the main tag to nest two paragraphs inside
+In a real case scenario these paragrahs will be considered the main 
+content of the page
+
+<h2>CatPhotoApp</h2>
+
+<main>
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+
+  <p> Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. </p>
+</main>
+
+
+# NOTE: From the next chapter onwards all notes will be in <!--  --> to make the notes easy to convert to HTML if the need arises.

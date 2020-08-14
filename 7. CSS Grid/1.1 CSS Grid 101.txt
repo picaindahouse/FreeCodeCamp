@@ -1,0 +1,13 @@
+Lesson 1.1: CSS Grid 101
+
+Just like flexbox Grid to has parent and child elements
+- However to differentiate between the two:
+  - Parent will be called container 
+  - Child will be called item
+
+To initiate grid have to name display either grid or inline grid:
+
+.grid-container {display: grid;}  OR
+
+.grid-container {display: inline-grid;}
+

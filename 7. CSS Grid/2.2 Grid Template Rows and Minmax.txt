@@ -1,0 +1,33 @@
+Lesson 2.2: Grid Template Rows and Minmax
+
+- The grid-template-row property defines the number of rows in your grid layout and the height of each layout
+- It will become clearer via the following example
+
+Eg 1: Say you want there to be 4 rows with the first two having a height of 50px, and the last two having a height of 60px
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 50px 50px 60px 60px;
+}
+
+Eg 2: Should you wish to have three rows all with the same height
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+# Whenever, you have a few rows with specified height and you wish for the rest to adjust accordingly, use auto for the 
+  non specified rows
+
+
+MINMAX
+
+Basically can use the minmax to determine how small or large an item can get
+- Used with grid-template-rows and grid-template-columns
+
+Therefore, in the following example, the max the second row can be is 100px and the min is 50px
+
+grid-template-rows: 100px minmax(50px, 100px);
+
+minmax (min, max) 

@@ -1,0 +1,36 @@
+<!-- Lesson 11: id of an Element
+We have already used id before when learning how to create links to segments in the same page
+- Basically id of an element basically acts like a way to identify a specific element
+- Thus an id of an element has to be unique to just that element
+
+How to set an id of an element:
+- Simply add the attribute id = "Unique-name"
+- Same as in the linking lesson
+
+Uses of an id to Style
+- What id does is to allow us to specifically style just one element
+- When we use <p>, we style all of the <p>
+- However, when you style #Unique-name from <p id = "Unique-name" you are just styling that specific <p> element
+- Instead of .class that we use for class
+  - When you wish to style an id- start with #
+  - This can be seen below where I style #cat-photo-form
+  - Where cat-photo-form is the id of the form
+--> 
+
+<style>
+
+  #cat-photo-form {background-color: green;}
+
+</style>
+
+<main>
+   <form action="/submit-cat-photo" id="cat-photo-form">
+    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</main>

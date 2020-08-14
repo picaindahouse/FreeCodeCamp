@@ -1,0 +1,12 @@
+<!-- Lesson 19: Extra
+
+A fast one, if you want the radio options to line up and not be side by side:
+- Then add a <br> after each line:
+-->
+
+  <label for = "indoor">
+    <input id = "indoor" type = "radio" name = "indoor-outdoor">indoor
+  </label><br>
+  <label for = "outdoor">
+    <input id = "outdoor" type = "radio" name = "indoor-outdoor">outdoor
+  </label>

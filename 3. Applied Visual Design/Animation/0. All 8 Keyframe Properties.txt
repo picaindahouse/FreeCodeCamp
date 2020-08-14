@@ -1,0 +1,82 @@
+Lesson 0: Keyframe Properties
+
+Plan is to cover all the keyframe properties slowly over different lessons
+- So I decided to add them to one list as each are covered:
+
+animation-name (Covered)
+animation-duration (Covered)
+animation-fill-mode (Covered)
+animation-delay
+animation-iteration-count (Covered)
+animation-direction
+animation-timing-function (Covered)
+animation
+
+ANIMATION NAME
+- Covered
+- Has to be defined
+# Used to bind the animation to an element
+
+@keyframes animation_name{}
+
+div {animation-name: animation_name;
+     animation-duration: 5s;}
+
+# Thus whatever you write after keyframes will become the animation-name which you can use to bind it to any element
+
+ANIMATION DURATION
+- Covered
+- Has to be defined
+# As you can see from the example used in animation name- animation-duration just like name has to be defined
+# Should be quite self explanatory- dictates how long the animation will last for
+
+ANIMATION FILL MODE
+- Covered
+# While I do use animation-fill-mode in one of the following chapters- it is not very well cover
+# Will explain it in-depth here:
+animation-fill-mode specifies what happen to the element when the animation is not playing:
+1) none - Default value. Animation will not apply any styles to the element before or after it is executing
+2) forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)
+3) backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period
+4) both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions
+
+ANIMATION DELAY
+- Not Covered
+# This is one of the properties that is not covered in following chapters
+# However, it is still a pretty useful tool to learn
+# Allows you to delay the start of the animation
+# animation-delay: 10s; will delay the start of the animation by 10s
+# You can also use negative values- the animation will start as if it had already been playing for N seconds
+
+ANIMATION ITERATION COUNT
+- Covered
+# Dictates how many time an animation should run
+# Can use the value "infinte" to make it run forever
+
+ANIMATION DIRECTION
+- Not Covered
+# Another one that is not covered, animation-direction specifies in which direction the animation should run
+# Four options:
+1) normal - The animation is played as normal (forwards). This is default
+2) reverse - The animation is played in reverse direction
+3) alternate - The animation is played forwards first, then backwards
+4) alternate-reverse - The animation is played backwards first, then forwards
+
+ANIMATION TIMING FUNCTION
+- Covered
+# Probably the most complicated to use- animation-timing-function allows you to control the speed of the animation
+# Covered quite in depth in the last chapter (esp the cubic-bezier stuff), thus I will just write the cheat codes here:
+1) ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)
+2) linear - Specifies an animation with the same speed from start to end
+3) ease-in - Specifies an animation with a slow start
+4) ease-out - Specifies an animation with a slow end
+5) ease-in-out - Specifies an animation with a slow start and end
+
+ANIMATION
+- Not Covered
+# Instead of writing out all of the animation properties, you could simply write them in one line:
+
+animation: tom 5s forwards 3s infinite alternate ease;
+  - Has all the 7 properties
+
+# Can put them in any order: just that name and duration have to be the first two

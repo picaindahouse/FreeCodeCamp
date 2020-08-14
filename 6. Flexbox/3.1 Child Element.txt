@@ -1,0 +1,25 @@
+Lesson 3.1: Child Element
+
+* While there is nothing to add here- child element will see a lot more of the responsive side of flex box
+* This is due to the more individualistic nature of the topics discussed
+
+The direct child elements of a flex container automatically become flexible items
+# In Lesson 3 we will go through the following flex item properties:
+
+- order
+- flex-grow
+- flex-shrink
+- flex-basis
+- flex
+- align-self
+
+Since with child element's we are going to be dealing with specific elements- have to style them personally
+- Not under style on the top
+
+eg:
+<div class="flex-container">
+  <div style="order: 3">1</div>
+</div>
+
+# Will learn order in the next lesson
+

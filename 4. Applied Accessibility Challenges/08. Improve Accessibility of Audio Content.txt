@@ -1,0 +1,23 @@
+Lesson 8: Improve Accessibility of Audio Content
+
+To learn how to improve accessibility we need to learn how to use audio elements
+
+A general outlook:
+<audio controls>
+  <source src= "#" type= "audio/mpeg>
+</audio>
+
+# Audio is the element
+# Add the attribute controls to be able to pause, start, skip the audio
+# Source is a self closing element where we add the attributes src and type
+# src gives the link to the audio and type informs the webpage what the audio actually is
+
+
+IMPROVING ACCESSIBILITY
+
+Methods will have to vary depending on what type of audio it is
+- Music: Just add a text description explaining how it is a song by ____
+- A Message: Text description that is a written version of the message
+
+
+Basically find a method that tries to help those that cannot hear what the audio is saying

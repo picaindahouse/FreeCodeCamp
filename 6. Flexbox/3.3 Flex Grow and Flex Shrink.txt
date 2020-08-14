@@ -1,0 +1,40 @@
+Lesson 3.3: Flex Grow and Flex Shrink
+
+* The main reason why I have to do this whole star thing is this chapter
+* I/You have to realise that the growing and shrinking that will be discussed in this lesson is in relation to the changing of screen size
+* That means that while they all will have the same size at the optimal screen size- the elements will grow and shrink according to what
+  I specify under flex-grow or flex-shrink
+* Grow and shrink DO NOT SPECIFY the actual sizes of the elements just that rate of growth or shinkage
+
+FLEX GROW
+The flex-grow property specifies how much the element will grow in relation to the other elements
+- Default is 0, which means that the element will not grow beyond the original specifications of the element
+  - Regardless of how large the screen gets
+- This also means that flex-grow: 8  will grow 8 times faster than flex-grow: 1
+
+To specify an element's growth: <div style="flex-grow: 2"></div>
+
+eg:
+<div class="flex-container">
+  <div style="flex-grow: 1">1</div>
+  <div style="flex-grow: 1">2</div>
+  <div style="flex-grow: 8">3</div>
+  <div style>4</div>
+</div>
+
+# The last div will only grow till it has reached its original specifications
+# The other three div will all continue to grow as the screen size grows but the third div will grow 8 times faster than the first 2 divs
+
+FLEX SHRINK
+Likewise flex-shrink specifies how much the element will shrink in relation to the other elements
+<div style="flex-shrink: 3">
+
+# Default is 1- meaning that the elements will shrink to accomodate the screen size even if you do not specify
+  - This is why a default child element won't grow beyond the original specs but will shrink
+# Setting flex-shrink: 0 means that the element will not shrink regardless of how small the screen gets
+# Once again- flex-shrink: 8 will shrink 8 times faster than flex-shrink: 1
+
+
+
+## An additional note- if you decide to use % as the unit then shrink and grow will technically dictate the actual sizes of the elements
+

@@ -1,0 +1,32 @@
+<!-- Lesson 4: Set Font Size and Family
+Now we will learn how to change font size and font family
+
+Just like we change the color to change size:
+
+<style>
+  p {font-size: 16px;}
+</style>
+
+- This makes the font size of all paragraphs to 16 
+
+To change font family (basically the font)
+
+<style>
+  p {
+     font-size: 16px;
+     font-family: monospace;}
+</style>
+
+- Now the font of all paragraphs is changed to monospace
+- Can have more than one changes in the same {}, that is why you use ;
+-->
+
+<style>
+  p {
+    font-size: 16px;
+    font-family: monospace;}
+</style>
+
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+</main>

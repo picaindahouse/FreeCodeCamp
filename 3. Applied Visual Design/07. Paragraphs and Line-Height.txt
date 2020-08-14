@@ -1,0 +1,8 @@
+Lesson 7: Paragraphs and Line-Height
+I'm pretty sure I know this but- you can use font-size on <p> and basically anything that has text init
+
+Line-Height (can be used by anything with text in it as well) is how much height each line will have
+eg:
+p {line-height: 10px;}
+
+- Once again unit can be absolute or relative but let's go with px for consistency

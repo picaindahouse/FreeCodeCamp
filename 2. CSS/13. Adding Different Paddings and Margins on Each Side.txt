@@ -1,0 +1,58 @@
+<!-- Lesson 13: Adding Different Paddings and Margins on Each Side
+Basically in this lesson we will learn how to have specific margins and paddings for each side of an element
+
+For Padding:
+There are two ways, the second one is clearly superior but need to know the first one
+- 1st Way, specify each side one by one
+
+.blue-box {
+            padding-top: 40px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 40px;}
+
+- 2nd Way, write the padding for each side in a clockwise direction
+  - Basically, Top Right Bottom Left
+  - No commas in between but end with ; as always
+
+.black-box{ padding: 40px 20px 20px 40px;}
+
+For Margin:
+- Same as padding just that you change padding to margin
+
+Below you can see both methods in use for both padding and margin over 4 different boxes
+-->
+
+The two methods above both give the same results
+<style>
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+  }
+
+  .black-box {
+    border-color: black;
+    color: #fff;
+    padding: 40px 20px 20px 40px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    color: #fff;
+    margin: 40px 20px 20px 40px
+  }
+
+</style>

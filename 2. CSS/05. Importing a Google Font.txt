@@ -1,0 +1,24 @@
+<!-- Lesson 5: Importing a Google Font
+Should you wish for a larger variety of fonts to choose from, can import fonts from Google Fonts
+
+- Just go to google fonts, find the font you like and copy the link 
+- Paste the google font link at the very top of the page, even above html and style
+- After that remember to use font-family: ____; , wherever you wish to apply the font
+
+-->
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {font-family: Lobster;}
+
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+ 

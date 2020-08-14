@@ -1,0 +1,9 @@
+Lesson 2: Grid Container
+
+In this lesson we will learn how to use layout by manipulating the grid container
+- There are four ways to do this:
+
+1) grid-template-column
+2) grid-template-row
+3) justify-content
+4) align-content

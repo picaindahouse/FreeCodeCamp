@@ -1,0 +1,32 @@
+Lesson 2.1: Parent Element
+
+The parent element is the element in which all of the elements you wish to layout reside 
+
+To start using flexbox you have to first define the flex container (the parent element)
+
+Very simple way to define the flex container, add display: flex; in css/ <style>
+
+<style>
+  .flex-container {display: flex;}
+</style>
+
+<html>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+</html>
+
+# In the above scenario the <div> with the class "flex-container" is the parent
+# The other three <div> are the child elements
+
+# There are a few flex properties that can be used to create the ideal layout to you
+# In Lesson 2 we will go through the following flex-container properties:
+
+- flex-direction
+- flex-wrap
+- flex-flow
+- justify-content
+- align-items
+- align-content

@@ -1,0 +1,22 @@
+Lesson 3.5: The Order of the Items
+
+# This is not ordering as used in flexbox but just using grid-area to define where certain items will go
+
+We can order the items in a certain way:
+.item1 { grid-area: 1 / 3 / 2 / 4; }
+.item2 { grid-area: 2 / 3 / 3 / 4; }
+.item3 { grid-area: 1 / 1 / 2 / 2; }
+.item4 { grid-area: 1 / 2 / 2 / 3; }
+.item5 { grid-area: 2 / 1 / 3 / 2; }
+.item6 { grid-area: 2 / 2 / 3 / 3; }
+
+But can use media queries to adjust the content on the site to tailor the site for mobile phones
+
+@media only screen and (max-width: 500px) {
+  .item1 { grid-area: 1 / span 3 / 2 / 4; }
+  .item2 { grid-area: 3 / 3 / 4 / 4; }
+  .item3 { grid-area: 2 / 1 / 3 / 2; }
+  .item4 { grid-area: 2 / 2 / span 2 / 3; }
+  .item5 { grid-area: 3 / 1 / 4 / 2; }
+  .item6 { grid-area: 2 / 3 / 3 / 4; }
+}

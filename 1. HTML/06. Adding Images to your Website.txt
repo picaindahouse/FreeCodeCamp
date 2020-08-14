@@ -1,0 +1,22 @@
+<!-- Lesson 6: Adding images to your website 
+To add images to your website you need to use img tag
+- img are self closing tags: thus no </img>
+- img have two required attributes: src and alt
+- src is an attribute where you put the link to your image
+- alt is what is to be displayed if the image in the link cannot be found
+- Below is the image that we added:
+
+<img src="https://bit.ly/fcc-relaxing-cat" alt="Image not Found">
+- src links to a picture of a cat
+- since alt="Image not Found", if cannot find img- will say Image not Found
+
+Note: Since img is put under main: need two spaces again
+-->
+
+<h2>CatPhotoApp</h2>
+<main>
+  <img src="https://bit.ly/fcc-relaxing-cat" alt="Image not Found">
+
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+</main>

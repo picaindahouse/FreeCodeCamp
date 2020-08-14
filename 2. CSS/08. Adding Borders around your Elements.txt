@@ -1,0 +1,35 @@
+<!-- Lesson 8: Adding Borders around your Elements
+
+To create a basic border around your elementsm there are three things to look at
+- border-color
+- border-width
+- border-style
+
+Specify the above three things and you can apply a border to anything
+
+Below we create a class that adds a thick green border to elements
+- As you can see I have specified all three things mentioned above
+- I then add it to the img we just resized
+
+You can have more than one class applied to the same element
+- class = "class-A Class-B"
+- Just seperate them with a space as seen below
+-->
+
+<style>
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<main>
+ 
+  <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+</main>

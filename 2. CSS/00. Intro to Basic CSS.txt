@@ -1,0 +1,15 @@
+# Lesson 0: Intro to Basic CSS
+
+CSS is a way to design your website
+
+Three ways to apply CSS styling:
+1) Can apply inline styles directly to HTML attributes
+- Considered the worst method
+
+2) Can place CSS rules within style tags in an HTML document
+- We will be working in this method for majority of this chapter
+
+3) Write CSS rules in an external style sheet
+- Considered Best Method
+- Keeps the styles seperate from HTML elements
+- Improves readability and reusability of your code

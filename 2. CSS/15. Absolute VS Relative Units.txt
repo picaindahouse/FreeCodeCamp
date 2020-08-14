@@ -1,0 +1,12 @@
+<!-- Lesson 15: Absolute VS Relative Units
+So far we have used px as the main unit
+- px is an absolute unit
+- Other absolute units you can use are in (inch), mm (milimeter) 
+
+
+However, one can also use relative units
+- These are units who dictate an objects size based on another property of the object
+- For example em is a unit which is based on the size of the element's font
+
+We will learn more under another chapter in the future
+-->

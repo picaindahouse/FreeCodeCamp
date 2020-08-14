@@ -1,0 +1,30 @@
+<!-- Lesson 20: How to Create a Checkbox
+A checkbox is the same as the Radio just that you can choose more than one option:
+- Radio: Can choose only one option
+- Checkbox: Can choose multiple options
+
+The actual coding is very similar to radio, with just one difference,
+- type = "checkbox" instead of "radio"
+
+Below you can see the three types of input we have added to our form
+- radio, checkbox, text
+-->
+
+<form action="/submit-cat-photo">
+  <label for="indoor"><input id="indoor" type="radio" 
+   name="indoor-outdoor"> Indoor</label>
+  <label for="outdoor"><input id="outdoor" type="radio" 
+   name="indoor-outdoor"> Outdoor</label><br>
+
+  <label for = "angry"><input id = "angry" type = "checkbox" 
+   name = "personality">Angry</label>
+  <label for = "sad"><input id = "sad" type = "checkbox" 
+   name = "personality">Sad</label>
+  <label for = "crazy"><input id = "crazy" type = "checkbox" 
+   name = "personality">Crazy</label>
+
+  <input type="text" placeholder="cat photo URL" required>
+
+  <button type="submit">Submit</button>
+</form>
+

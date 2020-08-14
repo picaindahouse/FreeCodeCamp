@@ -1,0 +1,20 @@
+<!-- Lesson 2: Using Style to Change Color
+This lesson will look at the second way to implement CSS to a HTML
+- Add <style> to the top of the page and add the changes you want over there
+
+Let us try to change the color of the h2 text to blue via this method:
+<style>
+  h2 {color: blue;}
+</style>
+
+- Write what you want to change in {}
+- Still put ; after blue
+
+So overall you it should look something like this:
+-->
+
+<style>
+  h2 {color: blue;}
+</style>
+<h2>CatPhotoApp</h2>
+

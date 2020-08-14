@@ -1,0 +1,21 @@
+Lesson 2.1: Grid Template Column
+
+- The grid-template-column property defines the number of columns in your grid layout and the width of each layout
+- It will become clearer via the following example
+
+Eg 1: Say you want there to be 4 columns with the first two having a width of 50px, and the last two having a width of 60px
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50px 50px 60px 60px;
+}
+
+Eg 2: Should you wish to have three columns all with the same width
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+# Whenever, you have a few columns with specified width and you wish for the rest to adjust accordingly, use auto for the 
+  non specified columns

@@ -1,0 +1,74 @@
+Lesson 3: Bold, Underline, Italicize, Strikethrough
+
+This lesson we will be learning about how to manipulate text to do the above
+There are two ways to do this:
+- Using style, this will apply the changes to the entire text
+- Using tags to apply to specific words within the text
+
+BOLD
+- Specific:
+For the tag methods, to bold certain parts of the text- use <strong> </strong>
+eg:
+<p>I want to go <strong>home</strong></p>
+# Now home is bold, but the rest of the <p> isn't
+
+- Style:
+Add font-weight: bold; to the element
+eg:
+<style>
+  p {font-weight:bold;}
+</style>
+# Now the entire <p> is bold
+
+Extra:
+font-weight can equate to alot of things:
+-  normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900, and inherit
+- 100 is light all the way to 900 which is bold
+
+UNDERLINE
+- Specific:
+For the tag methods, to underline certain parts of the text- use <u> </u>
+eg:
+<p>I want to go <u>home</u></p>
+# Now home is underlined, but the rest of the <p> isn't
+
+- Style:
+Add text-decoration: underline; to the element
+eg:
+<style>
+  p {text-decoration: underline;}
+</style>
+# Now the entire <p> is underlined
+
+ITALICIZE
+- Specific:
+For the tag methods, to italicize certain parts of the text- use <em> </em>
+eg:
+<p>I want to go <em>home</em></p>
+# Now home is italicized, but the rest of the <p> isn't
+
+- Style:
+Add font-style: italic; to the element
+eg:
+<style>
+  p {font-style: italic;}
+</style>
+# Now the entire <p> is italicized
+
+STRIKETHROUGH
+- Specific:
+For the tag methods, to bold certain parts of the text- use <s> </s>
+eg:
+<p>I want to go <s>home</s></p>
+# Now home is strikethrough, but the rest of the <p> isn't
+
+- Style:
+Add text-decoration: line-through;; to the element
+eg:
+<style>
+  p {text-decoration: line-through;}
+</style>
+# Now the entire <p> is strikethrough
+
+
+There should many more ways to manipulate text for your benefit- search online when I need to do so!

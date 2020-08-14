@@ -1,0 +1,23 @@
+Lesson 1: Text Alignment
+
+Let us start with something simple- how to align text
+There are four different ways one can align text:
+- center
+- left
+- right
+- justify
+
+Since the first three should be quite obvious, let me explain what the last one does
+- Justify causes all lines of text except the last line to meet the left and right edges of the line box.
+
+How to apply:
+To whichever element you wish to align just add the following:
+text-align: center;
+
+eg:
+<style>
+  h4 {text-align: center;}
+  p  {text-align: justify;}
+  h1 {text-align: left;}
+  h2 {text-align: right;}
+</style>

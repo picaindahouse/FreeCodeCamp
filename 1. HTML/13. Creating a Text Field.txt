@@ -1,0 +1,16 @@
+<!-- Lesson 13: Creating a Text Field
+Basically a box in which you can type stuff
+- Learn to make it do more in future lessons
+- Like search etc
+
+But for now it is just a box in which the user can type things:
+
+<input type="text">
+
+To have placeholder words which show what the box does add the
+placeholder attribute:
+
+<input type="text" placeholder="Search">
+-->
+
+<input type="text" placeholder="Search">

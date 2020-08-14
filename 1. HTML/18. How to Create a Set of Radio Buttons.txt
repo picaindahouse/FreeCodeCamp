@@ -1,0 +1,45 @@
+<!-- Lesson 18: Creating a Set of Radio Buttons
+You can use radio buttons for questions where you want the user to only give you one answer out of multiple options.
+- Note: ONLY ONE ANSWER!!!
+
+So to learn how to use radio buttons let us add some to our form
+- Give them the option to choose whether the cat photo they upload is taken outdoors or indoors
+
+The exact reasons why we nest input into label or why we use for and id is not very clear to me, but:
+- Radio Buttons are a type of input just like text fields
+- The following method is the general best way to create radio buttons
+
+So each option will require all this: (first for indoor)
+
+  <label for = "indoor">
+    <input id = "indoor" type = "radio" name = "indoor-outdoor">indoor
+  </label>
+
+- The for and id will be the same, type will equal radio 
+- The middle of the <input> and </label> will be the option
+- The name is what will remain the same for all options and tell thewebpage that all of the options are for 
+the same question
+ 
+Thus, the next option for outdoor
+- Will have for and id = "outdoor"
+- type and name will remain the same
+- <input ___>outdoor</label>
+
+Therefore, no matter how many options you have as long as the name is the same- they in same radio
+
+This is our form now- see the difference between indoor and outdoor
+-->
+
+<form action="/submit-cat-photo">
+  <label for = "indoor">
+    <input id = "indoor" type = "radio" name = "indoor-outdoor">indoor
+  </label>
+  <label for = "outdoor">
+    <input id = "outdoor" type = "radio" name = "indoor-outdoor">outdoor
+  </label>
+
+  <input type="text" placeholder="cat photo URL" required>
+
+  <button type="submit">Submit</button>
+</form>
+

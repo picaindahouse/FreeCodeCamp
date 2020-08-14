@@ -1,0 +1,10 @@
+Lesson 1: CSS Grid
+
+- CSS Grid helps you easily build complex web designs
+
+- It works by turning an HTML element into a grid container with rows and columns for you to place 
+  children elements where you want within a grid\
+
+- Basically a more complicated but thus more powerful version of flexbox
+
+- Where flexbox usually works in one dimensions CSS Grid works in 2 dimensions working with both rows and columns simultaneously

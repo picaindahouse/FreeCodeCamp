@@ -1,0 +1,57 @@
+Lesson 6: Making Elements only Visible to a Screen Reader
+
+Use CSS to hide things from a person who does not need a screen reader but not from those who do
+- Eg: A Bar Chart, would need a table for a user who uses a screen reader
+  - But while you would want the bar chart to be visible, you would not want the table to be seen
+
+Can just use the following class to hide things:
+
+<style>
+  .sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+  }
+</style>
+
+Then to the table itself:
+# Add the class sr-only
+# Also this is how you would create a table
+<table class="sr-only">
+      <caption>Hours of Weekly Training in Stealth, Combat, and Weapons</caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th scope="col">Stealth &amp; Agility</th>
+          <th scope="col">Combat</th>
+          <th scope="col">Weapons</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Week One</th>
+          <td>3</td>
+          <td>5</td>
+          <td>2</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <th scope="row">Week Two</th>
+          <td>4</td>
+          <td>5</td>
+          <td>3</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <th scope="row">Week Three</th>
+          <td>4</td>
+          <td>6</td>
+          <td>3</td>
+          <td>13</td>
+        </tr>
+      </tbody>
+    </table>

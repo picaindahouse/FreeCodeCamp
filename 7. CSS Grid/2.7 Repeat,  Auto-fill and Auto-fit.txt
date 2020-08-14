@@ -1,0 +1,35 @@
+Lesson 2.7: Repeat, Auto-fill and Auto-fit
+
+REPEAT
+
+Basically you can use the repeat function when you intend to repeat a certain value multiple times:
+eg:
+
+grid-template-rows: 50px 50px 50px 50px;
+
+# can also be written as:
+
+grid-template-rows: repeat(4, 50px);
+
+# Thus, it works like this- repeat(no. of times, the value)
+
+
+AUTO-FILL
+
+auto-fill is an option that comes with repeat.
+- It allows you to automatically insert as many rows or columns of your desired size as possible
+  - Depends on the size of the contained
+
+eg:
+repeat(auto-fill, 60px);
+
+This setup keeps inserting 60px columns and stretching them until it can insert another one in
+
+AUTO-FIT
+
+auto-fit is another option that comes with repeat which is very similar to auto-fill
+  - However, where auto-fill keeps on inserting more columns when the size of the contained exceeds the number of columns,
+    auto-fit stretches all of the existing columns to fit the size of the container
+
+eg:
+grid-template-columns: repeat(auto-fit, 60px);

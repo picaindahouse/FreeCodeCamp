@@ -1,0 +1,13 @@
+Lesson 3.6: Align Self
+
+* Nothing to add here
+
+# The align-self property allows the user to overwrite the align-items and set a specific one for a child element
+# All the possible options are the same as align-items
+  - Basically align-self is align-items for a specific element
+
+Usage:
+<div style="align-self: center">Hey</div>
+
+# Since this is only applicable to vertical alignment, I tried to find one for horizontal but than realised that 
+  probably not work

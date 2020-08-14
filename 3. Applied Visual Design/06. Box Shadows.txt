@@ -1,0 +1,33 @@
+Lesson 6: Let's Create Box-Shadows
+
+A box-shadow applies one or more shadows to an element
+- Important to take note that often it is more than one shadow
+
+The box-shadow takes 3 compulsory values and two optional:
+- offset-x (how far to push the shadow horizontally from the element),
+- offset-y (how far to push the shadow vertically from the element),
+- blur-radius,
+- spread-radius and
+- color
+
+Must follow this order, but blur-radius and spread radius are optional
+
+So, say:
+box-shadow: 0px 5px rgba(0,0,0,0.1);
+- Means offset-x, offset-y, color
+
+box-shadow: 0px 5px 5px (rgba(0,0,0,0.1);
+- Means offset-x, offset-y, blur-radius, color
+
+box-shadow: 0px 5px 5px 5px (rgba(0,0,0,0.1);
+- Means offset-x, offset-y, blur-radius, spread-radius, color
+
+Prob would have to mix-match until you get the desired outcome
+
+To apply more than one shadow to the same element as alluded to before:
+- Just add a comma in between:
+
+box-shadow: 0px 5px 5px 5px (rgba(0,0,0,0.1), 5px 3px rgb(12,34,56);
+
+Can have as many as you want
+- Once again mix-match until you get your desired outcome.

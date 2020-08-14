@@ -1,0 +1,55 @@
+Lesson 2.5: Justify Content
+
+* While this too is mostly a layout chapter- justify content does have an element of responsiveness to it
+* When the screen gets too big- you will get to see the true effects of flex-start/flex-end and the difference between space-around and space-between
+
+The justify-content property is used to align the flex items
+- Before I start remember you can visualise all of this using the cheatsheet
+- justify-content property aligns elements on the main axis. For rows, the main axis is a horizontal line and for columns it is a vertical line.
+  - This means that it aligns the elements horizontally for rows and vertically for columns
+- This can be done in 6 ways:
+
+1) justify-content: flex-start;
+
+.flex-container {display: flex;
+                 justify-content: flex-start;}
+
+- This is the default setting
+- Aligns the flex items at the beginning of the container
+
+2) justify-content: flex-end;
+
+.flex-container {display: flex;
+                 justify-content: flex-end;}
+
+- Aligns the flex items at the end of the container
+
+3) justify-content: center;
+
+.flex-container {display: flex;
+                 justify-content: center;}
+
+- Aligns the flex items at the center of the container
+
+4) justify-content: space-around;
+
+.flex-container {display: flex;
+                 justify-content: space-around;}
+
+- Aligns the flex items with space before, between and after the lines
+
+5) justify-content: space-between;
+
+.flex-container {display: flex;
+                 justify-content: space-between;}
+
+- Aligns the flex items with space between the lines
+
+6) justify-content: space-evenly;
+
+.flex-container {display: flex;
+                 justify-content: space-evenly;}
+
+- Aligns the flex items with space before, between and after the lines
+- However, where in space-around the space is only equal between adjacent elements
+  - In space-evenly the space is equal between adjacent elements and before the first element and after the last element
